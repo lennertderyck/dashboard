@@ -1,13 +1,13 @@
 html {
     background-color: rgb(247, 247, 247);
-    background-image: url(../images/background_blur.png);
-    background-repeat: no-repeat;
     height: 100%;
 }
 
 body {
     height: 100%;
     margin: 0px;
+    background-image: url(../images/background_blur.png);
+    background-repeat: no-repeat;
 }
 
 .nav_side_right_side {
