@@ -24,6 +24,7 @@ a {
         align-items: center;
         height: fit-content;
         width: fit-content;
+        user-select: none;
         margin: 0px;
         border: none;
         border-radius: 2px;
@@ -59,7 +60,38 @@ a {
         margin-right: 8px;
     }
 
+    .button_circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666666;
+        fill: #666666;
+        background-color: white;
+        height: 56px;
+        width: 56px;
+        margin: 15px 0px 15px 0px;
+        border-radius: 100%;
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+        transition: 0.2s ease-in-out;
+        transition-delay: 0ms;
+    }
+
+    .button_circle:hover {
+        background-color: white;
+        color: black;
+        fill: black;
+        box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
+        transition: 0.2s ease-in-out;
+        transition-delay: 0ms;
+        transition: box-shadow 150ms cubic-bezier(.4,0,1,1);
+    }
+
     /* SPECIFIC */
+
+    .button_circle svg {
+        height: 24px;
+        
+    }
 
     .button_route {
         background-color: #4285F4;
@@ -98,31 +130,11 @@ a {
 
 /* --- */
 
-.nav_side_icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    height: 56px;
-    width: 56px;
-    margin: 15px 0px 15px 0px;
-    border-radius: 100%;
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
-    transition: 0.2s ease-in-out;
-    transition-delay: 0ms;
-}
-
-.nav_side_icon:hover {
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
-    transition: 0.2s ease-in-out;
-    transition-delay: 0ms;
-}
-
-.nav_side_right_side div:last-of-type {
+.nav_side_right_side a:last-of-type {
     margin-bottom: 0px;
 }
 
-.nav_side_right_side div:first-of-type {
+.nav_side_right_side a:first-of-type {
     margin-bottom: 0px;
 }
 
@@ -146,7 +158,7 @@ a {
         transform: translateY(2px);
         margin: 0px;
         font-family: 'Oswald', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
         text-align: center;
