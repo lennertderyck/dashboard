@@ -97,6 +97,15 @@ a {
         background-color: #4285F4;
     }
 
+    .button_new_tab {
+        position: absolute;
+        background-color: white;
+        color: black;
+        font-weight: 400;
+        top: 25px;
+        right: 25px;
+    }
+    
 /* BUTTONS end */
 
 .content_fixed_top {
