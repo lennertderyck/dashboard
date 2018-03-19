@@ -16,6 +16,11 @@ a {
     width: fit-content;
 }
 
+.separator_line_vert {
+    height: 56px;
+    width: 2px;
+    background-color: #b8b8b8;
+}
 
 /* BUTTONS */
     .button {
@@ -32,7 +37,7 @@ a {
         background-color: #282828;
         padding: 10px;
         font-family: 'Oswald', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
@@ -114,7 +119,6 @@ a {
         position: absolute;
         background-color: white;
         color: black;
-        font-weight: 400;
         top: 25px;
         right: 25px;
     }
@@ -141,6 +145,18 @@ a {
         width: 24px;
         fill: black;
     }
+
+    /* SHORTCUT STACK */
+        #shortcut_stack {
+            background-color: #4b54a1;
+            color: white;
+        }
+
+        #shortcut_stack svg {
+            fill: white;;
+        }
+    /* SHORTCUT STACK end */
+        
     
 /* BUTTONS end */
 
@@ -315,21 +331,20 @@ a {
     transition-delay: 0ms;
 }
 
-.container_routes {
+.content_fixed_bottom {
     display: flex;
     align-items: center;
-    margin-top: 15px;
 }
 
-.container_routes .button {
+.content_fixed_bottom .button {
     margin: 0px 7px 0px 7px;
 }
 
-.container_routes a:first-of-type {
+.content_fixed_bottom a:first-of-type {
     margin-left: 0px;
 }
 
-.container_routes a:last-of-type {
+.content_fixed_bottom a:last-of-type {
     margin-right: 0px;
 }
 
