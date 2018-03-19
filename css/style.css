@@ -86,11 +86,24 @@ a {
         transition: box-shadow 150ms cubic-bezier(.4,0,1,1);
     }
 
+    .button_svg svg {
+        fill: white;
+        height: 23px;
+        max-width: 24px;
+        margin-right: 9px;
+        transition: 0.2s ease-in-out;
+        transition-delay: 0ms;
+    }
+
+    .button_svg:hover svg {
+        transition: 0.2s ease-in-out;
+        transition-delay: 0ms;
+    }
+
     /* SPECIFIC */
 
     .button_circle svg {
-        height: 24px;
-        
+        height: 24px;   
     }
 
     .button_route {
@@ -105,6 +118,29 @@ a {
         top: 25px;
         right: 25px;
     }
+
+    .button_shortcut {
+        margin: 15px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        background-color: white;
+        color: #666666;
+        font-weight: 400;
+    }
+
+    .button_shortcut:hover {
+        color: black;
+    }
+
+    .button_shortcut svg {
+        width: 24px;
+        fill: #666666;
+    }
+
+    .button_shortcut:hover svg {
+        width: 24px;
+        fill: black;
+    }
     
 /* BUTTONS end */
 
@@ -113,7 +149,8 @@ a {
     flex-direction: column;
     position: absolute;
     top: 25px;
-    left: 25px
+    left: 25px;
+    max-width: 691.39px;
 }
 
 .content_fixed_bottom {
@@ -294,4 +331,10 @@ a {
 
 .container_routes a:last-of-type {
     margin-right: 0px;
+}
+
+.container_shortcuts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
