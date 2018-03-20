@@ -22,6 +22,58 @@ a {
     background-color: #b8b8b8;
 }
 
+.notification_screensize {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    user-select: none;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    z-index: 1;
+}
+
+.notification_screensize_text {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.notification_screensize_icons {
+    margin-bottom: 10px;
+}
+
+.notification_screensize_text span {
+    font-weight: 300;
+}
+
+.notification_screensize button_reload {
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+    .content_site {
+        filter: blur(2px);
+    }
+
+    .notification_screensize {
+        visibility: visible;
+        filter: none;
+    }
+
+    .notification_screensize button_reload {
+        visibility: visible;
+    }
+}
+
 /* BUTTONS */
     .button {
         display: flex;
@@ -106,6 +158,16 @@ a {
     }
 
     /* SPECIFIC */
+    .button_reload {
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+    }
+
+    .button_reload i {
+        transform: scale(-1, 1);
+    }
 
     .button_circle svg {
         height: 24px;   
