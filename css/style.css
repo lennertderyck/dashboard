@@ -77,6 +77,24 @@ a {
     .notification_screensize button_reload {
         visibility: visible;
     }
+
+    #searchbar_nofocus {
+        display: unset;
+    }
+
+    #searchbar_focus {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 950px) {
+    #searchbar_focus {
+        display: block;
+    }
+
+    #searchbar_nofocus {
+        display: none;
+    }
 }
 
 /* BUTTONS */
@@ -373,6 +391,7 @@ a {
         background-color: lightgray;
         border: none;
     }
+
 /* SEARCHBAR end */
 
 .container_spotify_plugin::after {

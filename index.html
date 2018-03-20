@@ -30,7 +30,10 @@
                         <h1>zoeken</h1>
                         <!-- <span class="searchbar_title">by<img src="images/logo_google_grey_dark.svg" id="searchbar_logo_google" title="logo google short"></span> -->
                     </div>
-                    <form method="get" action="https://www.google.com/search" target="_blank">
+                    <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_blank">
+                        <input autocomplete="none" autofocus="autofocus" class="searchbar" name="q" placeholder=" " type="text" onfocus="value=''">
+                    </form>
+                    <form  id="searchbar_nofocus" method="get" action="https://www.google.com/search" target="_blank">
                         <input autocomplete="none" autofocus="autofocus" class="searchbar" name="q" placeholder=" " type="text" onfocus="value=''">
                     </form>
                 </div>
