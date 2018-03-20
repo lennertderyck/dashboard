@@ -64,6 +64,10 @@ a {
     visibility: hidden;
 }
 
+.screensize_max {
+    display: none;
+}
+
 @media only screen and (max-width: 950px) {
     .content_site {
         filter: blur(2px);
@@ -98,6 +102,20 @@ a {
 
     #searchbar_nofocus {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #searchbar_focus {
+        display: block;
+    }
+
+    #searchbar_nofocus {
+        display: none;
+    }
+
+    .screensize_max {
+        display: block;
     }
 }
 
