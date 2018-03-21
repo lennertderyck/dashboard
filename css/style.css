@@ -203,6 +203,10 @@ a {
     }
 
     /* SPECIFIC */
+    .button_circle svg {
+        font-size: 24px;
+    }
+
     .button_reload {
         margin-top: 25px;
         cursor: pointer;
