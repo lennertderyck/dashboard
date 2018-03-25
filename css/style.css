@@ -17,9 +17,10 @@ a {
 }
 
 .separator_line_vert {
-    height: 56px;
+    transform: translateY(-2px);
+    height: 44px;
     width: 2px;
-    background-color: #b8b8b8;
+    background-color: #bdbdbd;
 }
 
 
@@ -242,6 +243,7 @@ a {
         background-color: white;
         color: #666666;
         font-weight: 400;
+        min-width: fit-content;
     }
 
     .button_shortcut:hover {
@@ -289,6 +291,11 @@ a {
     bottom: 25px;
     left: 25px;
     flex-wrap: wrap;
+    background-color: #E4E4E4;
+    padding: 10px;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    border-radius: 2px;
 }
 
 .content_fixed_bottom .button {
@@ -461,8 +468,21 @@ a {
     margin-right: 0px;
 }
 
+.wrapper_shortcuts {
+    overflow-x: scroll;
+    overflow-y: visible;
+    height: 80px;
+}
+
 .container_shortcuts {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    min-width: min-content;
+    margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.wrapper_shortcuts::-webkit-scrollbar { 
+    display: none;
 }
