@@ -399,8 +399,10 @@ a {
         padding: 20px;
         border: none;
         outline: none;
-        font-family: 'Muli', sans-serif;
-        font-size: 0.9rem;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1rem;
         border-radius: 2px;
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
         transition: 0.2s ease-in-out;
@@ -480,7 +482,8 @@ a {
     flex-wrap: nowrap;
     min-width: min-content;
     margin-left: 10px;
-    margin-right: 10px; 
+    margin-right: 10px;
+    padding-right: 75px;
 }
 
 .wrapper_shortcuts::-webkit-scrollbar { 
