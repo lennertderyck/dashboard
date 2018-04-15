@@ -270,8 +270,40 @@ a {
             fill: white;;
         }
     /* SHORTCUT STACK end */
+
+    .button_nav_options {
+        opacity: 0;
+        align-self: center;
+        border-radius: 120px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        background-color: white;
+        color: #666666;
+        font-weight: 400;
+        min-width: fit-content;
+        transform: scale(0.9);
+        transition: 0.2s ease-in-out;
+    }
+
+    #nav_side_spotify {
+        transition: 0.2s ease-in-out;
+    }
         
-    
+    #nav_side_spotify:hover .button_nav_options {
+        opacity: 1;
+        transition: 0.2s ease-in-out;
+    }
+
+    #nav_side_spotify:hover #nav_side_spotify_icon svg {
+        fill: black;
+        color: black;
+        transition: 0.2s ease-in-out;
+    }
+
 /* BUTTONS end */
 
 .content_fixed_top {
@@ -302,20 +334,37 @@ a {
     transform: translateY(-2px)
 }
 
-.nav_side_right_side {
+.nav_side_right {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
     position: absolute;
     bottom: 25px;
     right: 25px;
     user-select: none;
 }
 
+.nav_options {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.nav_options a:first-of-type {
+    margin-right: 5px;
+}
+
 /* --- */
 
-.nav_side_right_side a:last-of-type {
+.nav_side_right a:last-of-type {
     margin-bottom: 0px;
 }
 
-.nav_side_right_side a:first-of-type {
+.nav_side_right a:first-of-type {
     margin-bottom: 0px;
 }
 
