@@ -71,7 +71,7 @@
             </div>
 
             <div class="feed_spotify">
-                <script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
                     function get_spotify() {
                         $.ajax({
                             type: 'POST',
@@ -86,8 +86,8 @@
 
             </div>
         </div>
-        <script>
-            window.onload = get_spotify()
+        <script type="text/javascript">
+            window.onload = function get_spotify(){}
         </script>
     </body>
 </html>
