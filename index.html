@@ -9,7 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
 <html>
-    <body onload="get_spotify()">
+    <body>
         <div class="notification_screensize">
             <span class="notification_screensize_icons"><i class="material-icons">visibility_off</i><br></span>
             <div class="notification_screensize_text">Deze site is enkel geoptimaliseerd voor desktop- en tabletgebruik<br class="screensize_max"> (in landscape modus)<br>
@@ -83,8 +83,11 @@
                         });
                     }
                 </script>
-                
+
             </div>
-        </div>   
+        </div>
+        <script>
+            window.onload = function() {get_spotify()}
+        </script>
     </body>
 </html>
