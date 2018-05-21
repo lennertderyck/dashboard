@@ -9,7 +9,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 </head>
 <html>
-    <body>
+    <body onload="get_spotify()">
         <div class="notification_screensize">
             <span class="notification_screensize_icons"><i class="material-icons">visibility_off</i><br></span>
             <div class="notification_screensize_text">Deze site is enkel geoptimaliseerd voor desktop- en tabletgebruik<br class="screensize_max"> (in landscape modus)<br>
@@ -70,10 +70,19 @@
                 <a id="shortcut_stack" class="button button_action button_svg" href="https://6printmedia.stackstorage.com/"><svg id="shortcut_logo_stack" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.44 282.44"><defs></defs><title>Naamloos-4</title><path class="cls-1" d="M141.89,1A141.22,141.22,0,1,0,283.11,142.25,141.22,141.22,0,0,0,141.89,1ZM224.56,198.8l-82.69,20.62L59.21,198.8V178.19l82.66,20.61,82.69-20.61Zm0-46.06-82.69,20.61L59.21,152.74V132.12l82.66,20.62,82.69-20.62Zm0-46.38-82.69,20.7-82.66-20.7V85.7l82.66-20.61L224.56,85.7Z" transform="translate(-0.67 -1.03)"/></svg>6PM</a>
             </div>
 
-            <div class="social_feed">
-                <div class="feed_facebook">
-                    
-                </div>
+            <div class="feed_spotify">
+                <script>
+                    function get_spotify() {
+                        $.ajax({
+                            type: 'POST',
+                            url: './last.fm.php',
+                            data: { request: 'true' },
+                            success: function(reply) {
+                                $('.now-playing').html("<p>" + reply + "</p>");
+                            }
+                        });
+                    }
+                </script>
             </div>
         </div>   
     </body>
