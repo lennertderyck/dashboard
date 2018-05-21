@@ -23,6 +23,19 @@ a {
     background-color: #bdbdbd;
 }
 
+.content_site {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+}
+
+.content_site_upper {
+    position: relative;
+    height: 100%;
+    width: 100%
+}
+
 
 .notification_screensize {
     visibility: hidden;
@@ -550,8 +563,5 @@ a {
 /* SPOTIFY FEED */
 
     .feed_spotify {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: black;
+        background-color: #282828;
     }
