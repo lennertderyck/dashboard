@@ -546,3 +546,12 @@ a {
 .wrapper_shortcuts::-webkit-scrollbar { 
     display: none;
 }
+
+/* SPOTIFY FEED */
+
+    .feed_spotify {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: black;
+    }
