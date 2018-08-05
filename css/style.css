@@ -174,12 +174,17 @@ img {
 
 .fastnav svg {
     fill: rgb(180, 180, 180);
-    height: 39px;
+    height: 27px;
+    padding: 6px;
     max-width: initial;
 }
 
 #fastnav-stack svg{
     fill: #4F56DA;
+}
+
+#fastnav-route svg{
+    fill: #4F87EC;
 }
 
 .fastnav .button {
