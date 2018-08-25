@@ -102,6 +102,13 @@ img {
     font-family: 'Product sans';
 }
 
+.notice {
+    background-color: #4285F4;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
 /* BUTTONS */
 .button {
     display: flex;
