@@ -239,6 +239,7 @@ img {
     transform: translateX(-50px);
     background-color: white;
     border-radius: 120px;
+    cursor: pointer;
 }
 
 .container-searchbar {
