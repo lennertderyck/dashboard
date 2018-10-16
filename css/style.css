@@ -309,3 +309,10 @@ img {
 #gs_tti50 input {
     background-color: black;
 }
+
+
+/* OFFLINE */
+
+.offline-ui {
+    border-radius: 120px;
+}
