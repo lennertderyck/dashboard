@@ -314,5 +314,24 @@ img {
 /* OFFLINE */
 
 .offline-ui {
+    margin-top: 4px;
     border-radius: 120px;
+    font-family: 'Product Sans'
+}
+
+.offline-ui-content {
+    white-space: nowrap;
+}
+
+.offline-ui-retry {
+    /* border-radius: 120px; */
+    border: none;
+}
+
+/* .offline-ui.offline-ui-down.offline-ui-waiting .offline-ui-retry {
+    display: none !important;
+} */
+
+.offline-ui.offline-ui-down.offline-ui-waiting {
+    padding-right: 16px;
 }
