@@ -1,5 +1,7 @@
+@import "./theme-dark.css";
+
 html {
-    background-color: rgb(247, 247, 247);
+    background-color: var(--bg-main);
     height: 100%;
 }
 
@@ -68,7 +70,8 @@ img {
     height: 16px;
     padding: 5px;
     border-radius: 10px;
-    background-color: rgb(247, 247, 247);
+    color: var(--color-notif);
+    background-color: var(--bg-notif);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
     transition: 0.2s ease-in-out;
     transition-delay: 0ms;
@@ -80,6 +83,7 @@ img {
     width: fit-content;
     border-radius: 10px;
     padding: 0px;
+    background-color: var(--accent-1);
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
     transition: 0.2s ease-in-out;
     transition-delay: 0ms;
@@ -153,7 +157,7 @@ img {
     display: grid;
     grid-area: fastnav;
     padding: 20px;
-    background-color: white;
+    background-color: var(--bg-main);
 }
 
 .container-fastnav {
@@ -176,7 +180,7 @@ img {
     padding: 10px;
     border-radius: 120px;
     height: fit-content;
-    background-color: rgb(233, 233, 233);
+    background-color: var(--accent-1);
 }
 
 .fastnav svg {
@@ -196,14 +200,14 @@ img {
 
 .fastnav .button {
     background-color: initial;
-    color: rgb(92, 92, 92);
+    color: var(--color);
     margin-right: 10px;
     font-weight: 700;
     box-shadow: none;
 }
 
 .fastnav .button:hover {
-    background-color: rgb(218, 218, 218);
+    background-color: var(--accent-2);
 }
 
 .fastnav a:last-of-type {
@@ -215,19 +219,19 @@ img {
     display: grid;
     position: relative;
     grid-area: searchbar;
-    background-color: rgb(233, 233, 233);
+    background-color: var(--accent-1);
     transition: 0.2s ease-in-out;
     transition-delay: 0ms;
 }
 
 #searchbar:hover {
-    background-color: rgb(218, 218, 218);
+    background-color: var(--accent-2);
     transition: 0.2s ease-in-out;
     transition-delay: 0ms;
 }
 
 #searchbar:focus-within, #searchbar:focus {
-    background-color: rgb(218, 218, 218);
+    background-color: var(--accent-2);
     transition: 0.2s ease-in-out;
     transition-delay: 0ms;
 }
@@ -261,7 +265,7 @@ img {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     font-family: 'Product sans';
-    color: rgb(92, 92, 92);
+    color: var(--color);
     font-size: 5rem;
     text-align: center;
     letter-spacing: 2px;
@@ -277,7 +281,7 @@ img {
 #shortcuts {
     display: grid;
     grid-area: shortcuts;
-    background-color: white;
+    background-color: var(--bg-main);
 }
 
 .container-shortcuts {
