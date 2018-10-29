@@ -189,11 +189,11 @@ img {
 }
 
 #fastnav-stack svg{
-    fill: #4F56DA;
+    fill: var(--fill-fastnav-stack);
 }
 
 #fastnav-route svg{
-    fill: #4F87EC;
+    fill: var(--fill-fastnav-route);
 }
 
 .fastnav .button {
