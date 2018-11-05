@@ -59,38 +59,32 @@ img {
     font-family: 'Roboto'
 }
 
-#container-notif-overlay:not(.collapse-area-active) {
+#container-notif-overlay {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    overflow: hidden;
-    width: 115px;
-    height: 16px;
-    padding: 5px;
     border-radius: 10px;
-    color: var(--color-notif);
     background-color: var(--accent-1);
+    color: var(--color-notif);
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
     transition: 0.2s ease-in-out;
     transition-delay: 0ms;
 }
 
-#container-notif-overlay.collapse-area-active{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+#container-notif-overlay:not(.collapse-area-active) {
+    overflow: hidden;
+    width: 115px;
+    height: 16px;
     padding: 5px;
-    color: var(--color-notif);
+    border-radius: 10px;
+}
 
+#container-notif-overlay.collapse-area-active{
+    padding: 5px;
     max-width: 250px;
     height: fit-content;
     width: fit-content;
-    border-radius: 10px;
     padding: 0px;
-    background-color: var(--accent-1);
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
-    transition: 0.2s ease-in-out;
-    transition-delay: 0ms;
 }
 
 #container-notif-overlay:not(.collapse-area-active) span {
