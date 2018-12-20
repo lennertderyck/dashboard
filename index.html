@@ -11,8 +11,9 @@
     <link href="https://personal-startpage.lennertderyck.be/plugins/offline-indicator/offline-theme-default.css" rel="stylesheet">
     <link href="https://personal-startpage.lennertderyck.be/plugins/offline-indicator/offline-language-dutch.css" rel="stylesheet">
     <script src="https://personal-startpage.lennertderyck.be/plugins/offline-indicator/offline.min.js"></script>
+    <script src="./themes.js"></script>
     <link href="../css/style.css" rel="stylesheet">
-    <link id="themeCss" href="https://personal-startpage.lennertderyck.be/css/theme-light" rel="stylesheet">
+    <!--<link id="themeCss" href="https://personal-startpage.lennertderyck.be/css/theme-light" rel="stylesheet">-->
     <script src="https://ce.lennertderyck.be/library/elements.js"></script>
 </head>
 <html>
@@ -78,7 +79,7 @@
                 console.log('Theme is ' + cookieThemeValue);
             }
         </script>
-        <section id="fastnav">
+        <section class="section" id="fastnav">
             <div class="container-fastnav">
                 <div class="fastnav" id="fastnav-route">
                         <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>round-directions-24px</title><g id="Rounded"><path d="M21.7,11.29l-9-9a1,1,0,0,0-1.41,0l-9,9a1,1,0,0,0,0,1.41l9,9a1,1,0,0,0,1.41,0l9-9A1,1,0,0,0,21.7,11.29ZM14,14.5V12H10v2a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1h5V7.5l3.14,3.15a.48.48,0,0,1,0,.71Z" transform="translate(-2 -2)"/></g></svg>
@@ -93,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section id="searchbar">
+        <section class="section" id="searchbar">
             <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" height="100px" onclick="window.open('https://www.google.be');">
             <div class="container-searchbar">
                 <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
@@ -102,7 +103,7 @@
                 </form>
             </div>
         </section>
-        <section id="shortcuts">
+        <section class="section" id="shortcuts">
             <div class="container-shortcuts">
                 <!-- Put here your favorite websites, with or without icon.
                     (this code is written for svg-icons added as markup) -->
