@@ -1,3 +1,7 @@
+:root {
+    --shadow: box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
+}
+
 html {
     background-color: var(--bg-main);
     height: 100%;
@@ -299,6 +303,15 @@ img {
     overflow-x: scroll;
 }
 
+/* THEME BUTTONS */
+#buttons-theme > button {
+    font-family: 'Product sans';
+    background: white;
+    border-radius: 120px;
+    border: none;
+    box-shadow: var(--shadow);
+}
+
 @media screen and (max-width: 1182px) {
     .container-shortcuts {
         justify-content: initial;
@@ -326,7 +339,7 @@ img {
 .offline-ui {
     margin-top: 4px;
     border-radius: 120px;
-    font-family: 'Product Sans'
+    font-family: 'Product Sans';
 }
 
 .offline-ui-content {
