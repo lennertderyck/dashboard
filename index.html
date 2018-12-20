@@ -60,9 +60,10 @@
             // Include CSS file
             function addCssElement(filename){
                 var head = document.getElementsByTagName('head')[0];
+                var cookieThemeUrl = cookieTheme + '.css';
 
                 var style = document.createElement('link');
-                style.href = 'https://personal-startpage.lennertderyck.be/css/theme-' + cookieTheme + '.css';
+                style.href = 'https://personal-startpage.lennertderyck.be/css/theme-' + cookieThemeUrl;
                 style.type = 'text/css';
                 style.rel = 'stylesheet';
                 head.append(style);
