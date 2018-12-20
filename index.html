@@ -1,22 +1,70 @@
 <!DOCTYPE html>
 <head>
     <title>Nieuw tabblad</title>
-    <link rel='shortcut icon' type='image/x-icon' href='../images/favicon-dark.ico'/>
+    <link rel='shortcut icon' type='image/x-icon' href='../images/favicon-light.ico'/>
     <link href="../css/fonts.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900|Oswald:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto:400,500,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
     <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width">
-    <link href="plugins/offline-indicator/offline-theme-default.css" rel="stylesheet">
-    <link href="plugins/offline-indicator/offline-language-dutch.css" rel="stylesheet">
-    <script src="plugins/offline-indicator/offline.min.js"></script>
+    <link href="https://personal-startpage.lennertderyck.be/plugins/offline-indicator/offline-theme-default.css" rel="stylesheet">
+    <link href="https://personal-startpage.lennertderyck.be/plugins/offline-indicator/offline-language-dutch.css" rel="stylesheet">
+    <script src="https://personal-startpage.lennertderyck.be/plugins/offline-indicator/offline.min.js"></script>
     <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/theme-light.css" rel="stylesheet">
+    <link id="themeCss" href="https://personal-startpage.lennertderyck.be/css/theme-.css" rel="stylesheet">
     <script src="https://ce.lennertderyck.be/library/elements.js"></script>
 </head>
 <html>
-    <body>
+    <body onload="loadCss()">
+        <script>
+            // https://www.quirksmode.org/js/cookies.html
+            // CREATE COOKIES createCookie('ppkcookie','testcookie',7)
+            function createCookie(name,value,days) {
+                if (days) {
+                    var date = new Date();
+                    date.setTime(date.getTime()+(days*24*60*60*1000));
+                    var expires = "; expires="+date.toGMTString();
+                }
+                else var expires = "";
+                document.cookie = name+"="+value+expires+"; path=/";
+            }
+
+            // READ COOKIES readCookie('ppkcookie1')
+            function readCookie(name) {
+                var nameEQ = name + "=";
+                var ca = document.cookie.split(';');
+                for(var i=0;i < ca.length;i++) {
+                    var c = ca[i];
+                    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+                    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+                }
+                return null;
+            }
+
+            // SET THEMES > BUTTONS
+            function setThemeDark() {
+                createCookie('theme','dark',7)
+                //document.cookie = "theme=dark" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
+                location.reload();
+            }
+            function setThemeDefault() {
+                createCookie('theme','default',7)
+                //document.cookie = "theme=default" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
+                location.reload();
+            }
+
+            // LOAD THEME BY DEFAULT
+            function loadCss() {
+
+                var cookieTheme = readCookie('theme');
+                document.getElementById("themeCss").href="https://personal-startpage.lennertderyck.be/css/theme-" + cookieTheme + ".css";
+
+                var cookieThemeValue = readCookie('theme');
+                console.log('Theme stat = javascript working');
+                console.log('Theme is ' + cookieThemeValue);
+            }
+        </script>
         <section id="fastnav">
             <div class="container-fastnav">
                 <div class="fastnav" id="fastnav-route">
@@ -81,6 +129,9 @@
                     </div>
                 </div>
             </div>
+            <button onclick="setThemeDark()">Set dark theme</button>
+            <button onclick="setThemeDefault()">Set default theme</button>
+            <button onclick="doOnce()">GET THEME</button>
         </div>
     </body>
 </html>
