@@ -75,13 +75,10 @@ function loadCss() {
 
     // Include Meta color
     function addMetaColor(){
-        var head = document.getElementsByTagName('head')[0];
         var cookieThemeValue = readCookie('theme');
 
-        var style = document.createElement('meta');
-        style.name = 'theme-color';
-        style.content = '#' + cookieThemeValue;
-        head.append(style);
+        var metaThemeColor = document.querySelector("meta[name=theme-color]");
+        metaThemeColor.setAttribute("content", cookieThemeValue);
     }
 
     var cookieThemeValue = readCookie('theme');
