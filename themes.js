@@ -71,7 +71,7 @@ function loadCss() {
         head.append(style);
     }
 
-    addMetaColor();
+    /* addMetaColor();
 
     // Include Meta color
     function addMetaColor(){
@@ -79,7 +79,7 @@ function loadCss() {
 
         var metaThemeColor = document.querySelector("meta[name=theme-color]");
         metaThemeColor.setAttribute("content", cookieThemeValue);
-    }
+    } */
 
     var cookieThemeValue = readCookie('theme');
     console.log('Theme stat = javascript working');
