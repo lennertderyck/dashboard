@@ -71,8 +71,10 @@ function loadCss() {
         head.append(style);
     }
 
+    addMetaColor();
+    
     // Include Meta color
-    function addFavicon(){
+    function addMetaColor(){
         var head = document.getElementsByTagName('head')[0];
         var cookieThemeValue = readCookie('theme');
 
