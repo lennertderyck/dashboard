@@ -49,9 +49,9 @@ function loadCss() {
         var cookieThemeUrl = cookieTheme + '.ico';
 
         var style = document.createElement('link');
-        style.href = 'https://personal-startpage.lennertderyck.be/images/favicon-theme-' + cookieThemeUrl;
         style.rel = 'shortcut icon';
         style.type = 'image/x-icon';
+        style.href = '../images/favicon-theme-' + cookieThemeUrl;
         head.append(style);
     }
 
@@ -59,8 +59,6 @@ function loadCss() {
     console.log('Theme stat = javascript working');
     console.log('Theme is ' + cookieThemeValue);
 }
-
-    onload = loadCss();
 
 // SET THEMES > BUTTONS
 function setThemeDark() {
