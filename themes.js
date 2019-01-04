@@ -81,7 +81,7 @@ function loadCss() {
         var style = document.createElement('meta');
         style.name = 'theme-color';
         style.content = '#' + cookieThemeValue;
-        head.append(meta);
+        head.append(style);
     }
 
     var cookieThemeValue = readCookie('theme');
