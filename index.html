@@ -17,22 +17,24 @@
     <script src="https://ce.lennertderyck.be/library/elements.js"></script>
     <script src="custom.js"></script>
 </head>
-<html>
+<html id="theme-doesnt-exists">
     <body id="body">
-        <div id="theme-dialog">
+        <div id="theme-dialog" class="">
             <div class="container">
-                <h1 class="my-0">Choose your theme</h1>
-                <h3 class="mt-0" id="currentTheme"></h3>
-                <div id="buttons-theme">
-                    <button onclick="setThemeDark()">set dark theme</button>
-                    <button onclick="setThemeDefault()">set default theme</button>
+                <div>
+                    <h1 class="my-0">Choose your theme</h1>
+                    <h3 class="mt-0" id="currentTheme"></h3>
+                    <div id="buttons-theme">
+                        <button onclick="setThemeDark()">set dark theme</button>
+                        <button onclick="setThemeDefault()">set default theme</button>
+                    </div>
+                    <br>
+                    <p>
+                        <small>
+                            You can always change the theme by clicking 'more'.
+                        </small>
+                    </p>
                 </div>
-                <br>
-                <p>
-                    <small>
-                        You can always change the theme by clicking 'more'.
-                    </small>
-                </p>
             </div>
         </div>
         <div class="site-content">
@@ -115,6 +117,22 @@
             function currentTheme() {
                 var cookieThemeValue = readCookie('theme');
                 document.getElementById("currentTheme").innerHTML = "current theme";
+            }
+
+            checkCookie();
+
+            function checkCookie() {
+                var themeExistance = getCookie("theme");
+                if (themeExistance == "") {
+                    console.log('Theme exists');
+                    var themeDialog = document.getElementById("theme-dialog");
+                    themeDialog.classList.add("toggle-active");
+                } else {
+                    console.log('Theme doesnt exists');
+                    var themeDialog = document.getElementById("theme-dialog");
+                    themeDialog.classList.remove("toggle-active");
+                    document.getElementsByTagName("html")[0].removeAttribute("id");
+                }
             }
         </script>
     </body>

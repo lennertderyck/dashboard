@@ -22,6 +22,22 @@ function readCookie(name) {
     return null;
 }
 
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+        }
+        return "";
+    }
+
 // SET THEME & CHECK
 function loadCss() {
     var cookieTheme = readCookie('theme');
@@ -63,11 +79,15 @@ function loadCss() {
 // SET THEMES > BUTTONS
 function setThemeDark() {
     createCookie('theme','dark',1000)
+    var dialogWindows = document.getElementById("theme-dialog");
+    dialogWindows.classList.remove("toggle-active");
     //document.cookie = "theme=dark" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
     location.reload();
 }
 function setThemeDefault() {
     createCookie('theme','default',1000)
+    var dialogWindows = document.getElementById("theme-dialog");
+    dialogWindows.classList.remove("toggle-active");
     //document.cookie = "theme=default" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
     location.reload();
 }
