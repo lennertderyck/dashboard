@@ -89,6 +89,7 @@ p {
 
     #theme-dialog > div.container #buttons-theme button{
         background-color: var(--blue);
+        color: var(--color-light);
     }
 
     #current-theme {
