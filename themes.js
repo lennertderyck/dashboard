@@ -1,4 +1,3 @@
-
 // https://www.quirksmode.org/js/cookies.html
 // CREATE COOKIES createCookie('ppkcookie','testcookie',7)
 function createCookie(name,value,days) {
@@ -23,22 +22,10 @@ function readCookie(name) {
     return null;
 }
 
-// SET THEMES > BUTTONS
-function setThemeDark() {
-    createCookie('theme','dark',1000)
-    //document.cookie = "theme=dark" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
-    location.reload();
-}
-function setThemeDefault() {
-    createCookie('theme','default',1000)
-    //document.cookie = "theme=default" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
-    location.reload();
-}
-
 // SET THEME & CHECK
 function loadCss() {
     var cookieTheme = readCookie('theme');
-    //document.getElementById("themeCss").href="https://personal-startpage.lennertderyck.be/css/theme-" + cookieTheme + ".css";
+    // document.getElementById("themeCss").href="https://personal-startpage.lennertderyck.be/css/theme-" + cookieTheme + ".css";
 
     addCssElement('style.css');
 
@@ -58,3 +45,17 @@ function loadCss() {
     console.log('Theme stat = javascript working');
     console.log('Theme is ' + cookieThemeValue);
 }
+
+// SET THEMES > BUTTONS
+function setThemeDark() {
+    createCookie('theme','dark',1000)
+    //document.cookie = "theme=dark" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
+    location.reload();
+}
+function setThemeDefault() {
+    createCookie('theme','default',1000)
+    //document.cookie = "theme=default" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
+    location.reload();
+}
+
+window.onload = loadCss();
