@@ -41,10 +41,26 @@ function loadCss() {
         head.append(style);
     }
 
+    addFavicon();
+
+    // Include CSS file
+    function addFavicon(){
+        var head = document.getElementsByTagName('head')[0];
+        var cookieThemeUrl = cookieTheme + '.ico';
+
+        var style = document.createElement('link');
+        style.href = 'https://personal-startpage.lennertderyck.be/images/favicon-theme-' + cookieThemeUrl;
+        style.rel = 'shortcut icon';
+        style.type = 'image/x-icon';
+        head.append(style);
+    }
+
     var cookieThemeValue = readCookie('theme');
     console.log('Theme stat = javascript working');
     console.log('Theme is ' + cookieThemeValue);
 }
+
+    onload = loadCss();
 
 // SET THEMES > BUTTONS
 function setThemeDark() {
