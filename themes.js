@@ -72,16 +72,16 @@ function loadCss() {
     }
 
     addMetaColor();
-    
+
     // Include Meta color
     function addMetaColor(){
         var head = document.getElementsByTagName('head')[0];
         var cookieThemeValue = readCookie('theme');
 
-        var style = document.createElement('link');
+        var style = document.createElement('meta');
         style.name = 'theme-color';
         style.content = '#' + cookieThemeValue;
-        head.append(style);
+        head.append(meta);
     }
 
     var cookieThemeValue = readCookie('theme');
