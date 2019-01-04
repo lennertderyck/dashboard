@@ -77,8 +77,8 @@ img {
 
 #container-notif-overlay:not(.collapse-area-active) {
     overflow: hidden;
-    width: 115px;
-    height: 16px;
+    width: 52px;
+    height: 19px;
     padding: 5px;
     border-radius: 10px;
 }
