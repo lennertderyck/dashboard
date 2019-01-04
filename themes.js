@@ -59,7 +59,7 @@ function loadCss() {
 
     addFavicon();
 
-    // Include CSS file
+    // Include Favicon
     function addFavicon(){
         var head = document.getElementsByTagName('head')[0];
         var cookieThemeUrl = cookieTheme + '.ico';
@@ -71,6 +71,17 @@ function loadCss() {
         head.append(style);
     }
 
+    // Include Meta color
+    function addFavicon(){
+        var head = document.getElementsByTagName('head')[0];
+        var cookieThemeValue = readCookie('theme');
+
+        var style = document.createElement('link');
+        style.name = 'theme-color';
+        style.content = '#' + cookieThemeValue;
+        head.append(style);
+    }
+
     var cookieThemeValue = readCookie('theme');
     console.log('Theme stat = javascript working');
     console.log('Theme is ' + cookieThemeValue);
@@ -78,14 +89,14 @@ function loadCss() {
 
 // SET THEMES > BUTTONS
 function setThemeDark() {
-    createCookie('theme','dark',1000)
+    createCookie('theme','2f3132',1000)
     var dialogWindows = document.getElementById("theme-dialog");
     dialogWindows.classList.remove("toggle-active");
     //document.cookie = "theme=dark" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";
     location.reload();
 }
 function setThemeDefault() {
-    createCookie('theme','default',1000)
+    createCookie('theme','e9e9e9',1000)
     var dialogWindows = document.getElementById("theme-dialog");
     dialogWindows.classList.remove("toggle-active");
     //document.cookie = "theme=default" + ";domain=127.0.0.1; expires=18 Dec 2034 12:00:00 UTC;";

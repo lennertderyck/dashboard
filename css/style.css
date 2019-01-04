@@ -461,7 +461,7 @@ p {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 767.98px) {
+@media (min-width: 576px) {
     #theme-dialog.toggle-active + .site-content {
         transform: scale(0.8);
     }
@@ -471,7 +471,7 @@ p {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     #theme-dialog > div.container {
         width: 30%;
         height: 25%;
