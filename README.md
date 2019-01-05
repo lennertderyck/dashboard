@@ -15,4 +15,7 @@ After you added the css-file, add a button (to the notification en 'More'-window
 ```js
 createCookie('theme','HEX-CODE WITHOUT # COMES HERE',1000)
 ```
+
+If you want to choose a favicon, just copy one of the existing ico-files (either dark or light) and change the name of the copied ico-file like you did for the css-file.
+
 after that you're done.
