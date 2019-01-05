@@ -114,7 +114,7 @@
             </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        <script>
             function currentTheme() {
                 var cookieThemeValue = readCookie('theme');
                 document.getElementById("currentTheme").innerHTML = "current theme";
@@ -135,14 +135,16 @@
                     document.getElementsByTagName("html")[0].removeAttribute("id");
                 }
             }
+        </script>
 
-            changeThemeColor();
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+        changeThemeColor();
 
-            function changeThemeColor() {
-                var cookieThemeValue = readCookie('theme');
-                var metaThemeColor = document.querySelector("meta[name=theme-color]");
-                metaThemeColor.setAttribute("content", cookieThemeValue);
-            }
+        function changeThemeColor() {
+            var cookieThemeValue = readCookie('theme');
+            var metaThemeColor = document.querySelector("meta[name=theme-color]");
+            metaThemeColor.setAttribute("content", cookieThemeValue);
+        }
         </script>
     </body>
 </html>
