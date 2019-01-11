@@ -1,0 +1,9 @@
+{
+    "name": "Custom Elements",
+    "short_name": "Custom Elements",
+    "description": "A CSS library",
+    "lang": "nl-BE",
+    "start_url": "/",
+    "scope": "personal-startpage.lennertderyck.be/",
+    "display": "standalone"
+  }
