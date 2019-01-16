@@ -31,9 +31,11 @@ fields:
     name: show_nav_top_left
     label: Show navbar left
     description: show the navigation block in the left upper corner
+    default: true
   - type: boolean
     name: show_nav_top_right
     label: Show navbar right
     description: show the navigation block in the right upper corner
+    default: true
 pages:
 - _forestry-settings/settings.md
