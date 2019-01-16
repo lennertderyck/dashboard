@@ -7,7 +7,6 @@ sections:
 - type: document
   path: https://personal-startpage.lennertderyck.be/admin/#/page-create?section=themes&pageType=theme
   label: Test
-  match: "**/*"
 - type: heading
   label: PERSONALIZATION
 - type: directory
