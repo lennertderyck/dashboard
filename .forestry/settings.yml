@@ -7,11 +7,19 @@ sections:
 - type: heading
   label: PERSONALIZATION
 - type: directory
+  path: _quicklinks
+  label: Quicklinks
+  create: documents
+  match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - quicklink
+- type: directory
   path: _themes
   label: Themes
   create: documents
   match: "**/*"
-  new_doc_ext: ".ms"
+  new_doc_ext: ms
   templates:
   - theme
 upload_dir: uploads
