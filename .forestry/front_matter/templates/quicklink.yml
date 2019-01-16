@@ -19,8 +19,9 @@ fields:
 - type: textarea
   name: icon
   label: icon
-  description: open a .svg-file in a texteditor (not Word) and copy the text that
-    you see here
+  description: enter svg markup, or markup for Google, Fontawesome or Feather icons,
+    more info on GitHub
+  default: <i data-feather="NAME-OF-THE-ICON"></i>
 - type: boolean
   name: hide_quicklink
   label: show quicklink
