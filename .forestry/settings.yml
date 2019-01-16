@@ -22,8 +22,8 @@ sections:
   new_doc_ext: md
   templates:
   - theme
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: themes
+public_path: "/themes"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
