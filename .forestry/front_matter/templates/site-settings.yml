@@ -1,0 +1,37 @@
+---
+label: Site settings
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: site_title
+  label: Site title
+  description: which name should be displayed on the browser tab, you can use Jekyll
+    variables
+  default: Nieuw tabblad
+- type: text
+  name: placeholder_search_bar
+  label: Placeholder search bar
+  description: what should be showed when there is nothing typed
+  default: zoeken
+- type: boolean
+  name: show_quicklinks
+  label: show quicklinks
+  default: true
+- type: boolean
+  name: show_google_logo
+  label: Show Google logo
+  default: true
+- type: field_group
+  name: group_navbars_top
+  label: NAVBARS TOP
+  description: Hide or show the navbars at the top
+  fields:
+  - type: boolean
+    name: show_nav_top_left
+    label: Show navbar left
+    description: show the navigation block in the left upper corner
+  - type: boolean
+    name: show_nav_top_right
+    label: Show navbar right
+    description: show the navigation block in the right upper corner
