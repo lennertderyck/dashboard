@@ -27,3 +27,4 @@ fields:
   default: true
 pages:
 - _quicklinks/ldr.md
+- _quicklinks/google-fonts.md
