@@ -4,9 +4,8 @@ auto_deploy: true
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: document
-  path: ''
-  label: Site settings
+- type: heading
+  label: PERSONALIZATION
 - type: directory
   path: _quicklinks
   label: Quicklinks
@@ -28,6 +27,7 @@ sections:
 - type: document
   path: _site-settings/settings.md
   label: Site settings
+  match: "**/*"
 upload_dir: themes
 public_path: "/themes"
 front_matter_path: ''
