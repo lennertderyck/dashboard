@@ -99,6 +99,9 @@ title: Home
                 <div id="buttons-theme" class="small column">
                     <button onclick="setThemeDark()">set dark theme</button>
                     <button onclick="setThemeDefault()">set default theme</button>
+                    {% for theme in site.themes %}
+                        <button onclick="{{ theme.name_javascript | remove: " " }}()">set {{ theme.name }} theme</button>
+                    {% endfor %}
                 </div>
                 <div class="version">
                 </div>
