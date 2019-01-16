@@ -249,11 +249,14 @@ p {
   padding: 6px;
   max-width: initial; }
 
-#fastnav-stack svg {
+#fastnav-right svg {
   fill: var(--fill-fastnav-stack); }
 
-#fastnav-route svg {
+#fastnav-left svg {
   fill: var(--fill-fastnav-route); }
+
+#fastnav-right[forestry-setting=false], #fastnav-left[forestry-setting=false] {
+  display: none !important; }
 
 .fastnav .button {
   background-color: initial;
