@@ -19,7 +19,7 @@ sections:
   label: Themes
   create: documents
   match: "**/*"
-  new_doc_ext: ms
+  new_doc_ext: md
   templates:
   - theme
 upload_dir: uploads
