@@ -27,8 +27,8 @@ fields:
   default: true
 pages:
 - _quicklinks/ldr.md
-- _quicklinks/pintrest.md
 - _quicklinks/google-fonts.md
 - _quicklinks/google-photos.md
 - _quicklinks/unsplash.md
 - _quicklinks/adobe-color.md
+- _quicklinks/pintrest.md
