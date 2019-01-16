@@ -1,0 +1,8 @@
+---
+label: Theme
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: human_readable_label
+  label: Human readable label
