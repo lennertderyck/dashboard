@@ -25,8 +25,9 @@ sections:
 - type: heading
   label: OTHER
 - type: document
-  path: _site-settings/settings.md
+  path: _forestry-settings/settings.md
   label: Site settings
+  match: "**/*"
 upload_dir: themes
 public_path: "/themes"
 front_matter_path: ''
