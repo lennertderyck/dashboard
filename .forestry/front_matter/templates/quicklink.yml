@@ -1,0 +1,27 @@
+---
+label: Quicklink
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: human_readable
+  label: Human readable name
+  description: human-friendly label
+  config:
+    required: true
+- type: text
+  name: url
+  label: Quicklink url
+  description: where should this quicklink lead to
+  default: https://
+  config:
+    required: true
+- type: textarea
+  name: icon
+  label: icon
+  description: open a .svg-file in a texteditor (not Word) and copy the text that
+    you see here
+- type: boolean
+  name: hide_quicklink
+  label: show quicklink
+  default: true
