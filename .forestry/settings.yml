@@ -9,8 +9,11 @@ sections:
 - type: directory
   path: _quicklinks
   label: Quicklinks
-  create: all
+  create: documents
   match: "**/*"
+  new_doc_ext: ".md"
+  templates:
+  - quicklink
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
