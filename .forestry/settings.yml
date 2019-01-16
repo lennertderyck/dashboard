@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _site-settings/settings.md
   label: Site settings
-  match: "**/*"
 - type: heading
   label: PERSONALIZATION
 - type: directory
