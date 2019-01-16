@@ -4,12 +4,20 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: human_readable
+  name: name
   label: Human readable name
   description: a human-readable label
-- type: text
-  description: 'the main color you want to use for your theme (HEX without #)'
-  label: main color
+- type: color
   name: main_color
   config:
-    required: true
+    color_format: Hex
+  label: Main color
+  description: the main color you want to use for your theme, make sure it's the same
+    value as the name of your theme
+  default: "#9D7676"
+- type: file
+  label: theme css-file
+  name: theme_css
+  description: the css-file of your theme
+  config:
+    maxSize: '10'
