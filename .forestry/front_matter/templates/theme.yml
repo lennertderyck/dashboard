@@ -29,3 +29,5 @@ fields:
     contains the main-color value (so it has to look something like this: theme-C62222.css)'
   config:
     maxSize: '10'
+pages:
+- _themes/newtheme.ms
