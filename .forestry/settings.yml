@@ -5,19 +5,11 @@ admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: directory
-  path: _themes
-  label: Themes
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - theme
-- type: directory
   path: _quicklinks
   label: Quicklinks
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - quicklink
 upload_dir: uploads
