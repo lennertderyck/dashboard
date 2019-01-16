@@ -353,6 +353,10 @@ p {
     cursor: pointer;
 }
 
+#searchbar img[forestry-setting="false"] {
+    display: none !important;
+}
+
 .container-searchbar {
     display: flex;
     justify-content: center;
@@ -398,6 +402,10 @@ p {
     align-items: center;
     padding: 15px;
     overflow-x: scroll;
+}
+
+.container-shortcuts[forestry-setting="false"] {
+    display: none !important;
 }
 
 /* THEME BUTTONS */
