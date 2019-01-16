@@ -25,3 +25,5 @@ fields:
   name: hide_quicklink
   label: show quicklink
   default: true
+pages:
+- _quicklinks/ldr.md
