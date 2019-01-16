@@ -33,7 +33,7 @@ Now you can edit the quicklinks and themes at the left side.
 ## Adding themes
 - Download this <a href="https://raw.githubusercontent.com/lennertderyck/personal-startpage/version-3.0-jekyll/css/theme-2f3132.css" target="_blank" rel="noopener">css-file</a>
 - Edit the variables in the theme
-- Upload the edited css-file to the master branch in the 'css'-folder
+- Upload the edited css-file to the 'css'-folder in the master branch
 - Go to the admin page for your personal startpage (USERNAME.github.io/personal-startpage/admin) and go to 'Themes' in the navigation.
 - Add a new theme
 - Select the new theme on your personal startpage (click 'More')
