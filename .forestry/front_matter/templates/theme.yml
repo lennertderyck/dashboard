@@ -7,6 +7,13 @@ fields:
   name: name
   label: Human readable name
   description: a human-readable label
+- type: text
+  name: name_javascript
+  label: Javascript friendly name
+  description: Choose a javascript-friendly name, so without strange characters only
+    letters, preferably without space and each word beginning with a capital
+  config:
+    required: true
 - type: color
   name: main_color
   config:
