@@ -4,5 +4,12 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: human_readable_label
-  label: Human readable label
+  name: human_readable
+  label: Human readable name
+  description: a human-readable label
+- type: text
+  description: 'the main color you want to use for your theme (HEX without #)'
+  label: main color
+  name: main_color
+  config:
+    required: true
