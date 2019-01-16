@@ -31,5 +31,9 @@ Enter the GitHub Pages url from before and put '/admin' after it.
 Now you can edit the quicklinks and themes at the left side.
 
 ## Adding themes
+- Download this <a href="https://raw.githubusercontent.com/lennertderyck/personal-startpage/version-3.0-jekyll/css/theme-2f3132.css" target="_blank" rel="noopener">css-file</a>
+- Edit the variables in the theme
+- Upload the edited css-file to the master branch in the 'css'-folder
 - Go to the admin page for your personal startpage (USERNAME.github.io/personal-startpage/admin) and go to 'Themes' in the navigation.
 - Add a new theme
+- Select the new theme on your personal startpage (click 'More')
