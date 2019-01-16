@@ -102,4 +102,13 @@ function setThemeDefault() {
     location.reload();
 }
 
+{% for theme in site.themes %}
+    function {{ theme.name | remove: " " }}() {
+        createCookie('theme','{{ theme.color | remove: "#" }}',1000)
+        var dialogWindows = document.getElementById("theme-dialog");
+        dialogWindows.classList.remove("toggle-active");
+        location.reload();
+    }
+{% endfor %}
+
 window.onload = loadCss();
