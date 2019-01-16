@@ -4,7 +4,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  name: human_readable
+  name: name
   label: Human readable name
   description: human-friendly label
   config:
