@@ -4,14 +4,12 @@ auto_deploy: false
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: heading
-  label: PERSONALISATION
 - type: directory
   path: _themes
   label: Themes
   create: documents
   match: "**/*"
-  new_doc_ext: ".md"
+  new_doc_ext: md
   templates:
   - theme
 - type: directory
