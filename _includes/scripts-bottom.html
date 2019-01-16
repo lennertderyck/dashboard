@@ -1,0 +1,22 @@
+<script>
+    function currentTheme() {
+        var cookieThemeValue = readCookie('theme');
+        document.getElementById("currentTheme").innerHTML = "current theme";
+    }
+
+    checkCookie();
+
+    function checkCookie() {
+        var themeExistance = getCookie("theme");
+        if (themeExistance == "") {
+            console.log('Theme doesnt exists');
+            var themeDialog = document.getElementById("theme-dialog");
+            themeDialog.classList.add("toggle-active");
+        } else {
+            console.log('Theme exists');
+            var themeDialog = document.getElementById("theme-dialog");
+            themeDialog.classList.remove("toggle-active");
+            document.getElementsByTagName("html")[0].removeAttribute("id");
+        }
+    }
+</script>
