@@ -51,7 +51,9 @@ title: Home
         </div>
     </section>
     <section class="section" id="shortcuts">
-        <div class="container-shortcuts hide-on-xs hide-on-sm">
+        {% for setting in site.forestry-settings %}
+        <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting-hide="{{ setting.hide_quicklinks }}">
+        {% endfor %}
             <!-- Put here your favorite websites, with or without icon.
                 (this code is written for svg-icons added as markup) -->
             {% for link in site.quicklinks %}
