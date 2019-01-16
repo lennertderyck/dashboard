@@ -5,18 +5,18 @@ Enter the url <a href="https://personal-startpage.lennertderyck.be" target="_bla
 Ofcourse you can clone my project so you can edit the buttons and more.
 
 ## Edit the personal startpage
-### Repo
+### 1. Repo
 - Fork or clone my repo.
 - Make a new branch 'gh-pages'.
 - Set up GitHub pages for this repo (Settings > GitHub Pages on the bottom).
 
-### Forestry.io
+### 2. Forestry.io
 - Visit <a href="https://forestry.io/signup" target="_blank" rel="noopener">Forestry.io</a> and make an account.
 Once your account is set up <a href="https://app.forestry.io/dashboard/#/add-site" target="_blank" rel="noopener">add your site</a>.
 - Connect your GitHub repo with your personal startpage with Forestry.
 
 
-### Forestry settings
+### 3. Forestry settings
 Now you should set up following settings
 - Go to Settings (on the left) > General - Enter your GitHub Pages url
 - On the same page click on 'Deploy admin' (beneath the time-setting)
@@ -26,10 +26,10 @@ Now you should set up following settings
 
 - Go to Settings > Build - And set the toggle for 'Deploy on git push' on on.
 
-### GitHub Pages admin
+### 4. GitHub Pages admin
 Enter the GitHub Pages url from before and put '/admin' after it.
 Now you can edit the quicklinks and themes at the left side.
 
-### Adding themes
+## Adding themes
 - Go to the admin page for your personal startpage (USERNAME.github.io/personal-startpage/admin) and go to 'Themes' in the navigation.
 - Add a new theme
