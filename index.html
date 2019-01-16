@@ -106,6 +106,13 @@ function setThemeDefault() {
 }
 
 
+    function TestTheme() {
+        createCookie('theme','',1000)
+        var dialogWindows = document.getElementById("theme-dialog");
+        dialogWindows.classList.remove("toggle-active");
+        location.reload();
+    }
+
 
 window.onload = loadCss();
 </script>
@@ -239,6 +246,8 @@ window.onload = loadCss();
                 <div id="buttons-theme" class="small column">
                     <button onclick="setThemeDark()">set dark theme</button>
                     <button onclick="setThemeDefault()">set default theme</button>
+                    
+                        <button onclick="TestTheme()">set Test theme theme</button>
                     
                 </div>
                 <div class="version">
