@@ -5,8 +5,9 @@ admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: document
-  path: page-create?section=themes&pageType=theme
-  label: Test
+  path: _site-settings/settings.md
+  label: Site settings
+  match: "**/*"
 - type: heading
   label: PERSONALIZATION
 - type: directory
