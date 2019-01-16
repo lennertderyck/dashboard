@@ -35,7 +35,7 @@ Now you can edit the quicklinks and themes at the left side.
 - Add a quicklink
 - Choose a name for the button
 - Enter the url
-- If you want you can choose an icon. Add the code of an svg-file or fill in the code for a <a href"https://https://material.io/tools/icons/?icon=build&style=baseline" rel="noopener" target="_blank">Google</a>, <a href"https://fontawesome.com/icons?d=gallery&m=free" rel="noopener" target="_blank">Font awesome</a> or <a href"https://feathericons.com/" rel="noopener" target="_blank">Feather</a> icon.
+- If you want you can choose an icon. Add the code of an svg-file or fill in the code for a <a href="https://https://material.io/tools/icons/?icon=build&style=baseline" rel="noopener" target="_blank">Google</a>, <a href="https://fontawesome.com/icons?d=gallery&m=free" rel="noopener" target="_blank">Font awesome</a> or <a href="https://feathericons.com/" rel="noopener" target="_blank">Feather</a> icon.
 
 ## Adding themes
 - Download this <a href="https://raw.githubusercontent.com/lennertderyck/personal-startpage/version-3.0-jekyll/css/theme-2f3132.css" target="_blank" rel="noopener">css-file</a>
