@@ -43,11 +43,13 @@ title: Home
     </section>
     <section class="section" id="searchbar">
         {% for setting in site.forestry-settings %}
-        <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="{{ setting.show_quicklinks }}" height="100px" onclick="window.open('https://www.google.be');">
+        <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="{{ setting.show_google_logo }}" height="100px" onclick="window.open('https://www.google.be');">
         {% endfor %}
         <div class="container-searchbar">
             <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
-                <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="zoeken" type="text" onload="value='hello'" spellcheck="false">
+                {% for setting in site.forestry-settings %}
+                <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="{{ setting.placeholder_search_bar }}" type="text" onload="value='hello'" spellcheck="false">
+                {% endfor %}
                 <label for="searchfield1"></label>
             </form>
         </div>

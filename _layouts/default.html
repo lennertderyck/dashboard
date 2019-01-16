@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <head>
     {% include themes.html %}
-    <title>Nieuw tabblad</title>
+    {% for setting in site.forestry-settings %}
+    <title>{{ setting.site_title }}</title>
+    {% endfor %}
     <!--<link rel='shortcut icon' type='image/x-icon' href='../images/favicon-light.ico'/>-->
     <meta id="siteColor" name="theme-color" content="#84db94">
     <script>
