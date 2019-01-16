@@ -27,6 +27,7 @@ fields:
   default: true
 pages:
 - _quicklinks/ldr.md
+- _quicklinks/the-noun-project.md
 - _quicklinks/google-fonts.md
 - _quicklinks/google-photos.md
 - _quicklinks/unsplash.md
