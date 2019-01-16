@@ -5,10 +5,8 @@ admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: document
-  path: _site-settings/settings.md
+  path: ''
   label: Site settings
-- type: heading
-  label: PERSONALIZATION
 - type: directory
   path: _quicklinks
   label: Quicklinks
@@ -25,6 +23,12 @@ sections:
   new_doc_ext: md
   templates:
   - theme
+- type: heading
+  label: OTHER
+- type: document
+  path: _site-settings/settings.md
+  label: Site settings
+  match: "**/*"
 upload_dir: themes
 public_path: "/themes"
 front_matter_path: ''
