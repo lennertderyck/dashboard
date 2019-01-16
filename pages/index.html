@@ -42,7 +42,9 @@ title: Home
         </div>
     </section>
     <section class="section" id="searchbar">
-        <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" height="100px" onclick="window.open('https://www.google.be');">
+        {% for setting in site.forestry-settings %}
+        <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="{{ setting.show_quicklinks }}" height="100px" onclick="window.open('https://www.google.be');">
+        {% endfor %}
         <div class="container-searchbar">
             <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
                 <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="zoeken" type="text" onload="value='hello'" spellcheck="false">
@@ -52,7 +54,7 @@ title: Home
     </section>
     <section class="section" id="shortcuts">
         {% for setting in site.forestry-settings %}
-        <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting-hide="{{ setting.hide_quicklinks }}">
+        <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting="{{ setting.show_quicklinks }}">
         {% endfor %}
             <!-- Put here your favorite websites, with or without icon.
                 (this code is written for svg-icons added as markup) -->
