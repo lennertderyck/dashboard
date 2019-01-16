@@ -5,7 +5,7 @@ admin_path: "/admin/"
 webhook_url: 
 sections:
 - type: document
-  path: https://personal-startpage.lennertderyck.be/admin/#/page-create?section=themes&pageType=theme
+  path: page-create?section=themes&pageType=theme
   label: Test
 - type: heading
   label: PERSONALIZATION
