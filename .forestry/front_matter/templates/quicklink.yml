@@ -1,7 +1,6 @@
 ---
 label: Quicklink
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: name
@@ -27,11 +26,11 @@ fields:
   label: show quicklink
   default: true
 pages:
-- _quicklinks/ldr.md
-- _quicklinks/the-noun-project.md
-- _quicklinks/google-fonts.md
-- _quicklinks/google-photos.md
-- _quicklinks/unsplash.md
-- _quicklinks/adobe-color.md
-- _quicklinks/pintrest.md
 - _quicklinks/google-weer.md
+- _quicklinks/the-noun-project.md
+- _quicklinks/pintrest.md
+- _quicklinks/adobe-color.md
+- _quicklinks/unsplash.md
+- _quicklinks/google-photos.md
+- _quicklinks/google-fonts.md
+- _quicklinks/ldr.md

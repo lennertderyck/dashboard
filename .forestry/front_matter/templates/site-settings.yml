@@ -1,7 +1,6 @@
 ---
 label: Site settings
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: site_title
