@@ -66,7 +66,7 @@ title: Home
             <!-- Put here your favorite websites, with or without icon.
                 (this code is written for svg-icons added as markup) -->
             {% for link in site.quicklinks %}
-                <a class="button" href="https://{{ link.url | remove: "https://" | remove: "http://" }}">
+                <a class="button" href="https://{{ link.quicklink-url | remove: "https://" | remove: "http://" }}">
                     {{ link.icon }}
                     {{ link.name | remove: "<p>" | remove: "</p>"  }}
                 </a>
