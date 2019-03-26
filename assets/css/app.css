@@ -343,6 +343,9 @@ p {
   padding: 15px;
   overflow-x: scroll; }
 
+#shortcuts > div > a > i, #shortcuts > div > a > svg {
+  margin-right: 7px; }
+
 .container-shortcuts[forestry-setting=false] {
   display: none !important; }
 
