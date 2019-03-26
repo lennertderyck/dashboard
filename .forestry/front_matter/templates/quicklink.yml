@@ -9,7 +9,7 @@ fields:
   config:
     required: true
 - type: text
-  name: url
+  name: quicklink-url
   label: Quicklink url
   description: where should this quicklink lead to
   default: https://
