@@ -505,6 +505,13 @@ p {
         border-radius: 8px;
     }
 
+    #btnBusModalCorner {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        height: 44px;
+        width: 44px;
+    }
     /* BUSSEN */
     #modalBussen .modal-body a {
         display: block;

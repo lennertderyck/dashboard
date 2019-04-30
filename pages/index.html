@@ -134,7 +134,7 @@ title: Home
                     {% assign stops = site.ov-stops | sort:"name" %}
                     {% for stop in stops %}
                         <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/{{ stop.ov-number }}/{{ stop.show-outcome }}" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">{{ stop.name }}</span><span class="ov-direction ml-3">Richting {{ stop.direction }}</span>
+                            <span class="ov-name txt-modern">{{ stop.name }}</span><span class="ov-direction ml-3 text-right">Richting {{ stop.direction }}</span>
                         </a>
                     {% endfor %}
                     
@@ -145,4 +145,8 @@ title: Home
                 </div>
             </div>
         </div>
+
+        <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalBussen">
+                <i class="material-icons">directions_bus</i>
+        </button>
 </div>
