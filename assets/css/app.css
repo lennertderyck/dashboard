@@ -6,6 +6,9 @@
 *, *:hover {
   transition: 0.35s all ease; }
 
+a, a:hover {
+  text-decoration: none; }
+
 html#theme-doesnt-exists {
   background-color: #2F3132;
   height: 100%; }
@@ -58,15 +61,13 @@ img {
 *:focus, *:focus-within {
   outline: none; }
 
-.my-0 {
-  margin-top: 0px !important;
-  margin-bottom: 0px !important; }
-
-.mt-0 {
-  margin-top: 0px !important; }
-
 p {
   font-family: 'Roboto'; }
+
+.txt-modern {
+  font-family: 'Product sans';
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 /* THEME DIALOG */
 #theme-dialog {
@@ -204,7 +205,6 @@ p {
 .button svg, .fastnav svg {
   fill: white;
   height: 23px;
-  max-width: 24px;
   margin-right: 9px;
   transition: 0.2s ease-in-out;
   transition-delay: 0ms; }
@@ -238,16 +238,15 @@ p {
   align-content: center;
   align-items: center;
   min-width: fit-content;
-  padding: 10px;
   border-radius: 120px;
   height: fit-content;
-  background-color: var(--accent-1); }
+  background-color: var(--accent-1);
+  padding-left: 6px; }
 
 .fastnav svg {
   fill: #b4b4b4;
-  height: 27px;
-  padding: 6px;
-  max-width: initial; }
+  height: 28px;
+  margin: 10px; }
 
 #fastnav-right svg {
   fill: var(--fill-fastnav-stack); }
@@ -258,18 +257,22 @@ p {
 #fastnav-right[forestry-setting=false], #fastnav-left[forestry-setting=false] {
   display: none !important; }
 
-.fastnav .button {
+.fastnav .button.link {
   background-color: initial;
   color: var(--color);
   margin-right: 10px;
   font-weight: 700;
-  box-shadow: none; }
+  box-shadow: none;
+  margin: 10px 0px 10px 10px; }
 
-.fastnav .button:hover {
+.fastnav .button.link:hover {
   background-color: var(--accent-2); }
 
-.fastnav a:last-of-type {
-  margin-right: 0px; }
+.fastnav a.link:last-of-type {
+  margin-right: 10px; }
+
+#btnBusModal {
+  margin-right: 10px; }
 
 /* SECTION SEARCHBAR */
 #searchbar {
@@ -405,6 +408,20 @@ p {
 } */
 .offline-ui.offline-ui-down.offline-ui-waiting {
   padding-right: 16px; }
+
+/* MODAL */
+.modal .modal-content {
+  border-radius: 8px; }
+
+/* BUSSEN */
+#modalBussen .modal-body a {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  width: 100%; }
+
+#modalBussen .modal-body .ov-direction {
+  color: grey; }
 
 /* MEDIA QUERIES */
 @media (min-width: 576px) {
