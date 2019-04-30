@@ -17,6 +17,10 @@ fields:
 - type: number
   name: show-outcome
   label: show-outcome
+  default: '8'
+  config:
+    min: '3'
+    max: '10'
 - type: boolean
   name: hide
   label: hide
