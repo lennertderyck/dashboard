@@ -1,0 +1,19 @@
+---
+label: ov-stops
+hide_body: true
+fields:
+- type: boolean
+  name: hide
+  label: hide
+- type: text
+  name: name
+  label: name
+- type: text
+  name: direction
+  label: direction
+- type: number
+  name: ov-number
+  label: ov-number
+- type: number
+  name: show-outcome
+  label: show-outcome

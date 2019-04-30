@@ -4,11 +4,6 @@ auto_deploy: true
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: directory
-  path: _ov-stops
-  label: OV-stops
-  create: documents
-  match: "**/*"
 - type: heading
   label: PERSONALIZATION
 - type: directory
@@ -27,6 +22,11 @@ sections:
   new_doc_ext: md
   templates:
   - theme
+- type: directory
+  path: _ov-stops
+  label: OV-stops
+  create: documents
+  match: "**/*"
 - type: heading
   label: OTHER
 - type: document
