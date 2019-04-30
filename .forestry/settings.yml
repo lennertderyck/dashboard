@@ -27,6 +27,8 @@ sections:
   label: OV-stops
   create: documents
   match: "**/*"
+  templates:
+  - ov-stops
 - type: heading
   label: OTHER
 - type: document
