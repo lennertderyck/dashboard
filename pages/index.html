@@ -41,29 +41,6 @@ title: Home
                             </button>
                         </div>
                         {% endfor %}
-                        <div class="modal fade" id="modalBussen" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modalBussenTitle">Bus- en tramverbindingen</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202453/8" target="_blank" rel="noopener">
-                                        <span class="ov-name txt-modern">Stelplaats</span><span class="ov-direction ml-3">Richting Gent Sint-Pieters</span>
-                                    </a>
-                                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202362/8" target="_blank" rel="noopener">
-                                        <span class="ov-name txt-modern">Industrieweg</span><span class="ov-direction ml-3">Richting Gent Sint-Pieters</span>
-                                    </a>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="button" data-dismiss="modal">Close</button>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
                 </div>
                 <div class="col-auto">
                     {% for setting in site.forestry-settings %}
@@ -143,4 +120,29 @@ title: Home
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="modalBussen" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalBussenTitle">Bus- en tramverbindingen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    {% assign stops = site.ov-stops | sort:"name" %}
+                    {% for stop in stops %}
+                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/{{ stop.ov-number }}/{{ stop.show-outcome }}" target="_blank" rel="noopener">
+                            <span class="ov-name txt-modern">{{ stop.name }}</span><span class="ov-direction ml-3">Richting {{ stop.direction }}</span>
+                        </a>
+                    {% endfor %}
+                    
+                </div>
+                <div class="modal-footer d-none">
+                    <button type="button" class="button" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+            </div>
+        </div>
 </div>

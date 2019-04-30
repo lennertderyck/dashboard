@@ -507,9 +507,18 @@ p {
     /* BUSSEN */
     #modalBussen .modal-body a {
         display: block;
-        padding-top: 13px;
+        padding-top: 15px;
         padding-bottom: 13px;
         width: 100%;
+    }
+
+    #modalBussen .modal-body a:first-child {
+        padding-top: 0px;
+    }
+
+    #modalBussen .modal-body a:last-child {
+        padding-bottom: 0px;
+        border: none;
     }
 
     #modalBussen .modal-body .ov-direction {
