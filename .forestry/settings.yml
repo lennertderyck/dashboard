@@ -7,7 +7,6 @@ sections:
 - type: document
   path: https://personal-startpage.lennertderyck.be/admin/#/page-create?section=ov-stops&pageType=ov-stops
   label: New ov-stop
-  match: "**/*"
 - type: heading
   label: PERSONALIZATION
 - type: directory
