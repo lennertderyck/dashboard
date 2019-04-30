@@ -59,7 +59,8 @@ img {
   pointer-events: none; }
 
 *:focus, *:focus-within {
-  outline: none; }
+  outline: none !important;
+  box-shadow: none !important; }
 
 p {
   font-family: 'Roboto'; }
