@@ -4,9 +4,6 @@ auto_deploy: true
 admin_path: "/admin/"
 webhook_url: 
 sections:
-- type: document
-  path: https://personal-startpage.lennertderyck.be/admin/#/page-create?section=ov-stops&pageType=ov-stops
-  label: New ov-stop
 - type: heading
   label: PERSONALIZATION
 - type: directory
