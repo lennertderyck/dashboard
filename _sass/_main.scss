@@ -4,7 +4,7 @@
 
     --bd-radius: 8px;
 
-    --version-number: 'v3.6.2';
+    --version-number: 'v3.6.3';
 
 }
 
@@ -235,7 +235,7 @@ p {
     #collapseCorner > .collapse {
         overflow: hidden;
         border-radius: var(--bd-radius);
-        max-height: 85vh;
+        max-height: calc(85vh - 20px - 44px - 16px);
         overflow-y: scroll;
     }
 /* BUTTONS */
