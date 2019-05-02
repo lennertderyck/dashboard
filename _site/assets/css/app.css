@@ -193,7 +193,9 @@ p {
 
 #collapseCorner > .collapse {
   overflow: hidden;
-  border-radius: var(--bd-radius); }
+  border-radius: var(--bd-radius);
+  max-height: 85vh;
+  overflow-y: scroll; }
 
 /* BUTTONS */
 .button {
