@@ -7,7 +7,8 @@
   transition: 0.35s all ease; }
 
 a, a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 html#theme-doesnt-exists {
   background-color: #2F3132;
@@ -197,6 +198,9 @@ p {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
   transition: 0.2s ease-in-out;
   transition-delay: 0ms; }
+
+a.button:hover {
+  color: white; }
 
 .button:hover {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
