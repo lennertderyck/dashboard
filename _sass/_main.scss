@@ -11,6 +11,7 @@
 
 a, a:hover {
     text-decoration: none;
+    color: inherit
 }
 
 html#theme-doesnt-exists {
@@ -232,6 +233,10 @@ p {
         box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
         transition: 0.2s ease-in-out;
         transition-delay: 0ms;
+    }
+
+    a.button:hover {
+        color: white;
     }
 
     .button:hover {
