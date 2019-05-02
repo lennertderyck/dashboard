@@ -1,7 +1,8 @@
 :root {
   --shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   --blue: #4285F4;
-  --version-number: 'v3.5'; }
+  --bd-radius: 8px;
+  --version-number: 'v3.6'; }
 
 *, *:hover {
   transition: 0.35s all ease; }
@@ -25,7 +26,7 @@ body {
   overflow: hidden; }
 
 #theme-dialog.toggle-active + .site-content {
-  border-radius: 8px;
+  border-radius: var(--bd-radius);
   transform: scale(0.93) translateY(-10px);
   box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.3);
   overflow: hidden;
@@ -44,6 +45,10 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Product sans'; }
+
+.collapse .card.card-body, .collapse, .collapsing {
+  border-radius: var(--bd-radius);
+  border: none !important; }
 
 p {
   margin: 0px; }
@@ -70,6 +75,9 @@ p {
   font-family: 'Product sans';
   letter-spacing: 2px;
   text-transform: uppercase; }
+
+.bg-color-blue {
+  background-color: var(--blue); }
 
 /* THEME DIALOG */
 #theme-dialog {
@@ -175,6 +183,17 @@ p {
   color: white;
   border-radius: 10px;
   padding: 10px; }
+
+/* COLLAPSE CORNER */
+#collapseCorner {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  max-width: 250px; }
+
+#collapseCorner > .collapse {
+  overflow: hidden;
+  border-radius: var(--bd-radius); }
 
 /* BUTTONS */
 .button {
@@ -416,7 +435,7 @@ a.button:hover {
 
 /* MODAL */
 .modal .modal-content {
-  border-radius: 8px; }
+  border-radius: var(--bd-radius); }
 
 #btnBusModalCorner {
   position: fixed;
@@ -463,4 +482,4 @@ a.button:hover {
 
   #theme-dialog > div.container {
     box-shadow: var(--shadow);
-    border-radius: 8px; } }
+    border-radius: var(--bd-radius); } }

@@ -230,7 +230,7 @@ window.onload = loadCss();
              
         </div>
     </section>
-    <div id="container-notif-overlay" class="toggle">
+    <div id="container-notif-overlay" class="toggle d-none">
         <i class="material-icons" onclick="closeOptions()">
             close
         </i>
@@ -270,69 +270,92 @@ window.onload = loadCss();
     </div>
 
     <div class="modal fade" id="modalBussen" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalBussenTitle">Bus- en tramverbindingen</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202454/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Admiraalstraat</span><span class="ov-direction ml-3 text-right">Dampoort</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/209450/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Dampoort perron 11</span><span class="ov-direction ml-3 text-right">Destelbergen</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/203450/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Dampoort perron 12</span><span class="ov-direction ml-3 text-right">Destelbergen</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/201138/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Dampoort perron 13</span><span class="ov-direction ml-3 text-right">Gentbrugge</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/200134/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Gentbruggestraat (Vijfhoek)</span><span class="ov-direction ml-3 text-right">Dampoort</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202362/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Industrieweg</span><span class="ov-direction ml-3 text-right">Gent Sint-Pieters</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/205913/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Sint-Pietersstation perron 13</span><span class="ov-direction ml-3 text-right">Dampoort</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/204912/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Sint-Pietersstation perron 2</span><span class="ov-direction ml-3 text-right">Korenmarkt</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/204918/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Sint-Pietersstation perron 8</span><span class="ov-direction ml-3 text-right">Mariakerke</span>
-                        </a>
-                    
-                        <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202453/8" target="_blank" rel="noopener">
-                            <span class="ov-name txt-modern">Stelplaats</span><span class="ov-direction ml-3 text-right">Gent Sint-Pieters</span>
-                        </a>
-                    
-                    
-                </div>
-                <div class="modal-footer d-none">
-                    <button type="button" class="button" data-dismiss="modal">Close</button>
-                </div>
-                </div>
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalBussenTitle">Bus- en tramverbindingen</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202454/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Admiraalstraat</span><span class="ov-direction ml-3 text-right">Dampoort</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/209450/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Dampoort perron 11</span><span class="ov-direction ml-3 text-right">Destelbergen</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/203450/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Dampoort perron 12</span><span class="ov-direction ml-3 text-right">Destelbergen</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/201138/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Dampoort perron 13</span><span class="ov-direction ml-3 text-right">Gentbrugge</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/200134/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Gentbruggestraat (Vijfhoek)</span><span class="ov-direction ml-3 text-right">Dampoort</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202362/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Industrieweg</span><span class="ov-direction ml-3 text-right">Gent Sint-Pieters</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/205913/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Sint-Pietersstation perron 13</span><span class="ov-direction ml-3 text-right">Dampoort</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/204912/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Sint-Pietersstation perron 2</span><span class="ov-direction ml-3 text-right">Korenmarkt</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/204918/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Sint-Pietersstation perron 8</span><span class="ov-direction ml-3 text-right">Mariakerke</span>
+                    </a>
+                
+                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202453/8" target="_blank" rel="noopener">
+                        <span class="ov-name txt-modern">Stelplaats</span><span class="ov-direction ml-3 text-right">Gent Sint-Pieters</span>
+                    </a>
+                
+                
+            </div>
+            <div class="modal-footer d-none">
+                <button type="button" class="button" data-dismiss="modal">Close</button>
+            </div>
             </div>
         </div>
+    </div>
+    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalBussen">
+            <i class="material-icons">directions_bus</i>
+    </button>
+</div>
 
-        <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalBussen">
-                <i class="material-icons">directions_bus</i>
-        </button>
+<div id="collapseCorner" class="d-flex flex-column justify-content-end align-items-end">
+    <div class="collapse" id="collapseMore">
+        <div class="card card-body bg-color-2 txt-color-white">
+            <h2>More</h2>
+            <p class="mb-3">The new personal startpage got an entire make-over, based on the new version of Google's Material Design.</p>
+            <p class="mb-3">It's fresher and easier to use.</p>
+            <p class="mb-3 p-3 bg-color-blue bd-radius">The personal startpage is now optimized for most mobile devices.</p>
+            <p class="mb-3"> Get your own at <a href="https://github.com/lennertderyck/personal-startpage" target="_blank" rel="noopener">Github</a>.</p>
+            <div id="buttons-theme" class="small column">
+                    <button onclick="setThemeDark()">set dark theme</button>
+                    <button onclick="setThemeDefault()">set default theme</button>
+                    
+                        <button onclick="setTestTheme()">set Test theme theme</button>
+                    
+                </div>
+                <div class="version">
+                </div>
+        </div>
+    </div>
+    <button class="button mt-3" type="button" data-toggle="collapse" data-target="#collapseMore" aria-expanded="false" aria-controls="collapseMore" style="width: fit-content;">
+        <i class="material-icons">settings</i>
+    </button>
 </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
