@@ -4,7 +4,7 @@
 
     --bd-radius: 8px;
 
-    --version-number: 'v3.7.3';
+    --version-number: 'v3.7.4';
 }
 
 *, *:hover {
@@ -231,12 +231,19 @@ p {
         max-width: 250px;
     }
 
-    #collapseCorner > .collapse {
+    #collapseCorner > .collapse, #collapseCorner > .collapsing,  #collapseCorner > .collapse:not(.show) {
+        color: var(--color);
         overflow: hidden;
         border-radius: var(--bd-radius);
         max-height: calc(85vh - 20px - 44px - 16px);
         overflow-y: scroll;
+        box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2);
     }
+
+    #collapseCorner > .collapse *, #collapseCorner > .collapsing *,  #collapseCorner > .collapse:not(.show) * {
+        color: var(--color);
+    }
+
 /* BUTTONS */
     .button {
         display: flex;
@@ -462,7 +469,7 @@ p {
         border: none;
         box-shadow: var(--shadow);
         background-color: var(--blue);
-        color: white;
+        color: white !important;
         font-size: 1rem;
         padding: 5px 10px;
         margin-right: 10px;
