@@ -15,6 +15,10 @@ fields:
   default: https://
   config:
     required: true
+- name: new-tab
+  type: boolean
+  label: Open in new tab
+  description: open this link in a new tab
 - type: textarea
   name: icon
   label: icon
