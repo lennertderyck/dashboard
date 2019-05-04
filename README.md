@@ -38,9 +38,23 @@ Now you can edit the quicklinks and themes at the left side.
 - If you want you can choose an icon. Add the code of an svg-file or fill in the code for a <a href="https://material.io/tools/icons/?icon=build&style=baseline" rel="noopener" target="_blank">Google</a>, <a href="https://fontawesome.com/icons?d=gallery&m=free" rel="noopener" target="_blank">Font awesome</a> or <a href="https://feathericons.com/" rel="noopener" target="_blank">Feather</a> icon. They are all supported by default.
 
 ## Adding themes
-- Download this <a href="https://raw.githubusercontent.com/lennertderyck/personal-startpage/version-3.0-jekyll/css/theme-2f3132.css" target="_blank" rel="noopener">css-file</a>
-- Edit the variables in the theme
-- Upload the edited css-file to the 'css'-folder in the master branch
-- Go to the admin page for your personal startpage (USERNAME.github.io/personal-startpage/admin) and go to 'Themes' in the navigation.
-- Add a new theme
-- Select the new theme on your personal startpage (click 'More')
+- Find the css-file named 'themes.css' in the css folder
+- Add your theme like in the example below
+```css
+[data-theme*="2f3132"] {
+    --bg-main: #3E4041;
+    --bg-notif: #2F3132;
+    --accent-1: #2F3132;
+    --accent-2: rgb(34, 34, 34);
+    --color: #e0e0e0; /* Main text color */
+    --color-notif: white;
+    --fill-fastnav-stack: white;
+    --fill-fastnav-route: white;
+    --close-x-color: white; /* The color of the X in the settings-box */
+}
+```
+- Add a button in the index.html file and between the quotation marks in the javascript function you fill in the name of your theme 
+```html
+<button onclick="setTheme('2f3132')">set dark theme</button>
+```
+- Now go to your personal startpage and click on the button to set your theme
