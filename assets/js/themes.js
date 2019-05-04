@@ -41,8 +41,7 @@ function addFavicon(){
 function setTheme(themecolor) {
     createCookie('theme',themecolor,1000)
     var dialogWindows = document.getElementById("theme-dialog");
+    var body = document.getElementById("body");
     dialogWindows.classList.remove("toggle-active");
-    location.reload();
+    body.setAttribute('data-theme', themecolor)
 }
-
-// window.onload = loadCss();
