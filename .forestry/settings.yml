@@ -15,14 +15,6 @@ sections:
   templates:
   - quicklink
 - type: directory
-  path: _themes
-  label: Themes
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - theme
-- type: directory
   path: _ov-stops
   label: OV-stops
   create: documents
