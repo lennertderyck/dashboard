@@ -13,8 +13,8 @@ title: Home
             <h1 class="my-0">Choose your theme</h1>
             <h3 class="mt-0" id="currentTheme"></h3>
             <div id="buttons-theme">
-                <button onclick="setThemeDark()">dark theme</button>
-                <button onclick="setThemeDefault()">default theme</button>
+                <button onclick="setTheme('2f3132')">dark theme</button>
+                <button onclick="setTheme('e9e9e9')">default theme</button>
             </div>
             <br>
             <p>
@@ -75,7 +75,7 @@ title: Home
             <!-- Put here your favorite websites, with or without icon.
                 (this code is written for svg-icons added as markup) -->
             {% for link in site.quicklinks %}
-                <a class="button" href="https://{{ link.quicklink-url | remove: "https://" | remove: "http://" }}">
+                <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %}target="_blank" rel="noopener"{% endif %}>
                     {{ link.icon }}
                     {{ link.name | remove: "<p>" | remove: "</p>"  }}
                 </a>
@@ -109,8 +109,8 @@ title: Home
                 <br>
 
                 <div id="buttons-theme" class="small column">
-                    <button onclick="setThemeDark()">set dark theme</button>
-                    <button onclick="setThemeDefault()">set default theme</button>
+                    <button onclick="setTheme('2f3132')">set dark theme</button>
+                    <button onclick="setTheme('e9e9e9')">set default theme</button>
                     {% for theme in site.themes %}
                         <button onclick="set{{ theme.name_javascript | remove: " " }}()">set {{ theme.name }} theme</button>
                     {% endfor %}
@@ -159,11 +159,8 @@ title: Home
             <p class="mb-3 p-3 bg-color-blue bd-radius">The personal startpage is now optimized for most mobile devices.</p>
             <p class="mb-3"> Get your own at <a href="https://github.com/lennertderyck/personal-startpage" target="_blank" rel="noopener">Github</a>.</p>
             <div id="buttons-theme" class="small column">
-                    <button onclick="setThemeDark()">set dark theme</button>
-                    <button onclick="setThemeDefault()">set default theme</button>
-                    {% for theme in site.themes %}
-                        <button onclick="set{{ theme.name_javascript | remove: " " }}()">set {{ theme.name }} theme</button>
-                    {% endfor %}
+                    <button onclick="setTheme('2f3132')">set dark theme</button>
+                    <button onclick="setTheme('e9e9e9')">set default theme</button>
                 </div>
                 <div class="version">
                 </div>
