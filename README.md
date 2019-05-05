@@ -19,7 +19,7 @@ Once your account is set up <a href="https://app.forestry.io/dashboard/#/add-sit
 
 ### 3. Forestry settings
 Now you should set up following settings
-- Go to Settings (on the left) > General - Enter your GitHub Pages url
+- Go to Settings (on the bottom left) > General - Enter your GitHub Pages url
 - On the same page click on 'Deploy admin' (beneath the time-setting)
 - Save settings
 
