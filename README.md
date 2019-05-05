@@ -42,7 +42,7 @@ Now you can edit the quicklinks and themes at the left side.
 - Find the css-file named 'themes.css' in the css folder
 - Add your theme like in the example below and edit the colors
 ```css
-[data-theme*="2f3132"] {
+[data-theme*="yourthemename"] {
     --bg-main: #3E4041;
     --bg-notif: #2F3132;
     --accent-1: #2F3132;
@@ -56,6 +56,6 @@ Now you can edit the quicklinks and themes at the left side.
 ```
 - Add a button in the index.html file and between the quotation marks in the javascript function you fill in the name of your theme 
 ```html
-<button onclick="setTheme('2f3132')">set dark theme</button>
+<button onclick="setTheme('yourthemename')">set dark theme</button>
 ```
 - Now go to your personal startpage and click on the button to set your theme
