@@ -6,14 +6,15 @@ Ofcourse you can clone my project so you can edit the buttons and more.
 
 ## Edit the personal startpage
 ### 1. Repo
-- Fork or clone my repo.
-- Make a new branch 'gh-pages'.
-- Set up GitHub pages for this repo (Settings > GitHub Pages on the bottom).
+- Fork or clone my repo. I recommend opening the repo in GitHub Desktop (click on 'Open in Desktop' after clicking the green button) when you don't have a lot experience with using Command Prompt, Terminal or git in general.
+- Make a new branch 'gh-pages' (You can do this by clicking on the branch-button on the GitHub page, just enter a name)
+- Set up GitHub pages for this repo (Settings > GitHub Pages on the bottom)
 
 ### 2. Forestry.io
+*Forestry is the easiest way of managing your startpage but if you have some experience with Jekyll you can also try it using a code Editor, but Forestry makes it very easy to update stuff.*
 - Visit <a href="https://forestry.io/signup" target="_blank" rel="noopener">Forestry.io</a> and make an account.
 Once your account is set up <a href="https://app.forestry.io/dashboard/#/add-site" target="_blank" rel="noopener">add your site</a>.
-- Connect your GitHub repo with your personal startpage with Forestry.
+- Connect your GitHub repo with your personal startpage with Forestry
 
 
 ### 3. Forestry settings
@@ -39,7 +40,7 @@ Now you can edit the quicklinks and themes at the left side.
 
 ## Adding themes
 - Find the css-file named 'themes.css' in the css folder
-- Add your theme like in the example below
+- Add your theme like in the example below and edit the colors
 ```css
 [data-theme*="2f3132"] {
     --bg-main: #3E4041;
