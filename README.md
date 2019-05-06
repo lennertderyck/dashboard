@@ -59,3 +59,25 @@ Now you can edit the quicklinks and themes at the left side.
 <button onclick="setTheme('yourthemename')">set dark theme</button>
 ```
 - Now go to your personal startpage and click on the button to set your theme
+
+You can also add multiple buttons for multiple themes:
+
+```html
+<button onclick="setTheme('black')">set dark theme</button>
+<button onclick="setTheme('default')">set dark theme</button>
+<button onclick="setTheme('deepseablue')">set dark theme</button>
+```
+
+```css
+[data-theme*="black"] {
+    /* Color settings */
+}
+
+[data-theme*="default"] {
+    /* Color settings */
+}
+
+[data-theme*="deepseablue"] {
+    /* Color settings */
+}
+```
