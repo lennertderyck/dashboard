@@ -40,7 +40,7 @@ Now you can edit the quicklinks and themes at the left side.
 
 ## Adding themes
 - Find the css-file named 'themes.css' in the css folder
-- Add your theme like in the example below and edit the colors
+- Add your theme like in the example below and edit the colors (the blue text in the example below)
 ```css
 [data-theme*="yourthemename"] {
     --bg-main: #3E4041;
