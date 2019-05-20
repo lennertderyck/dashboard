@@ -3,7 +3,7 @@ label: Quicklink
 hide_body: true
 fields:
 - type: text
-  name: name
+  name: title
   label: Human readable name
   description: human-friendly label
   config:
