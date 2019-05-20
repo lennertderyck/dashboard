@@ -77,7 +77,7 @@ title: Home
             {% for link in site.quicklinks %}
                 <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %}target="_blank" rel="noopener"{% endif %}>
                     {{ link.icon }}
-                    {{ link.name | remove: "<p>" | remove: "</p>"  }}
+                    {{ link.title | remove: "<p>" | remove: "</p>"  }}
                 </a>
             {% endfor %} 
         </div>
