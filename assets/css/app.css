@@ -233,8 +233,8 @@ a.button:hover {
   transition: 0.2s ease-in-out;
   transition-delay: 0ms; }
 
-.button svg, .fastnav svg {
-  fill: white !important;
+.button svg, .fastnav svg, .button [class*="cls"], .fastnav [class*="cls"] {
+  fill: white;
   height: 23px;
   margin-right: 9px;
   transition: 0.2s ease-in-out;
