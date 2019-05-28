@@ -32,4 +32,5 @@ fields:
   default: true
 pages:
 - _quicklinks/Spotify.md
+- _quicklinks/local-4000.md
 - _quicklinks/gh-gr-7.md
