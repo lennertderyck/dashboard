@@ -7,5 +7,6 @@ icon: <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" vie
 hide_quicklink: true
 name: Spotify web
 new-tab: false
+title: Spotify
 
 ---
