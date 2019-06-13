@@ -55,33 +55,37 @@ title: Home
             </div>
         </div>
     </div>
-    <section class="section" id="searchbar">
-        {% for setting in site.forestry-settings %}
-        <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="{{ setting.show_google_logo }}" height="100px" onclick="window.open('https://www.google.be');">
-        {% endfor %}
-        <div class="container-searchbar">
-            <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
-                {% for setting in site.forestry-settings %}
-                <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="{{ setting.placeholder_search_bar }}" type="text" onload="value='hello'" spellcheck="false">
-                {% endfor %}
-                <label for="searchfield1"></label>
-            </form>
+    <div class="row" id="searchbar">
+        <div class="col">
+            {% for setting in site.forestry-settings %}
+            <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="{{ setting.show_google_logo }}" height="100px" onclick="window.open('https://www.google.be');">
+            {% endfor %}
+            <div class="container-searchbar">
+                <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
+                    {% for setting in site.forestry-settings %}
+                    <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="{{ setting.placeholder_search_bar }}" type="text" onload="value='hello'" spellcheck="false">
+                    {% endfor %}
+                    <label for="searchfield1"></label>
+                </form>
+            </div>
         </div>
-    </section>
-    <section class="section" id="shortcuts">
-        {% for setting in site.forestry-settings %}
-        <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting="{{ setting.show_quicklinks }}">
-        {% endfor %}
-            <!-- Put here your favorite websites, with or without icon.
-                (this code is written for svg-icons added as markup) -->
-            {% for link in site.quicklinks %}
-                <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %}target="_blank" rel="noopener"{% endif %}>
-                    {{ link.icon }}
-                    {{ link.title | remove: "<p>" | remove: "</p>"  }}
-                </a>
-            {% endfor %} 
+    </div>
+    <div class="row" id="shortcuts">
+        <div class="col d-flex align-items-center justify-content-center">
+            {% for setting in site.forestry-settings %}
+            <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting="{{ setting.show_quicklinks }}">
+            {% endfor %}
+                <!-- Put here your favorite websites, with or without icon.
+                    (this code is written for svg-icons added as markup) -->
+                {% for link in site.quicklinks %}
+                    <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %}target="_blank" rel="noopener"{% endif %}>
+                        {{ link.icon }}
+                        {{ link.title | remove: "<p>" | remove: "</p>"  }}
+                    </a>
+                {% endfor %} 
+            </div>
         </div>
-    </section>
+    </div>
 
     <div class="modal fade" id="modalBussen" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
