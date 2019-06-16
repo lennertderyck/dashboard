@@ -29,14 +29,11 @@
 
     <!-- RECOURCES -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900|Oswald:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i|Roboto:400,500,700" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,|Roboto:400,500,700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://ce.lennertderyck.be/library/elements.js"></script>
     
     <!--ICONS-->
-    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
@@ -75,7 +72,7 @@
                             <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/51.062979,3.750965/@51.06033,3.7519287,15z/data=!4m2!4m1!3e0" rel="noopener" target="_blank">TAXI DAWID</a>
                             <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Dampoort/@51.0556759,3.6745547,12z/data=!3m1!4b1!4m2!4m1!3e0" rel="noopener" target="_blank">DAMPOORT</a>
                             <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Industrieweg+232,+Mariakerke+9030+Gent,+België/@51.0572361,3.7008382,12.54z/data=!4m14!4m13!1m5!1m1!1s0x47c37694f6a091d5:0xa14fb7f72a695f2a!2m2!1d3.7688251!2d51.0537478!1m5!1m1!1s0x47c37049c2ee923b:0x268fc495b0688754!2m2!1d3.6705206!2d51.0867926!3e3" rel="noopener" target="_blank">ARTEVELDE</a>
-                            <button id="btnBusModal" type="button" class="button" data-toggle="modal" data-target="#modalBussen">
+                            <button id="btnBusModalBeta" type="button" class="button" data-toggle="modal" data-target="#modalOvStops">
                                     <i class="material-icons">directions_bus</i>
                             </button>
                         </div>
@@ -141,71 +138,80 @@
         </div>
     </div>
 
-    <div class="modal fade" id="modalBussen" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
+    <div class="modal" id="modalOvStops" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalBussenTitle">Bus- en tramverbindingen</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202454/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Admiraalstraat</span><span class="ov-direction ml-3 text-right">Dampoort</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/209450/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Dampoort perron 11</span><span class="ov-direction ml-3 text-right">Destelbergen</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/203450/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Dampoort perron 12</span><span class="ov-direction ml-3 text-right">Destelbergen</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/201138/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Dampoort perron 13</span><span class="ov-direction ml-3 text-right">Gentbrugge</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/200134/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Gentbruggestraat (Vijfhoek)</span><span class="ov-direction ml-3 text-right">Dampoort</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202362/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Industrieweg</span><span class="ov-direction ml-3 text-right">Gent Sint-Pieters</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/205910/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Sint-Pietersstation perron 10</span><span class="ov-direction ml-3 text-right">Merelbeke</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/205913/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Sint-Pietersstation perron 13</span><span class="ov-direction ml-3 text-right">Dampoort</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/204912/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Sint-Pietersstation perron 2</span><span class="ov-direction ml-3 text-right">Korenmarkt</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/204918/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Sint-Pietersstation perron 8</span><span class="ov-direction ml-3 text-right">Mariakerke</span>
-                    </a>
-                
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/202453/8" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">Stelplaats</span><span class="ov-direction ml-3 text-right">Gent Sint-Pieters</span>
-                    </a>
-                
-                
-            </div>
-            <div class="modal-footer d-none">
-                <button type="button" class="button" data-dismiss="modal">Close</button>
-            </div>
+                <div class="modal-header">
+                    <h5 class="modal-title fontw-700 txt-uppc" id="modalBussenTitle">Bus- en tramverbindingen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="carouselOvStops" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+                        <div class="carousel-inner" style="height: calc(100vh - 3.5rem - 66px);" data-interval="false">
+                            <div class="carousel-item active" data-interval="false" style="padding: 1rem;">
+                                
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(202454,8,'Admiraalstraat','Dampoort');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Admiraalstraat</span><span class="ovDirection ml-3 text-right">Dampoort</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(209450,8,'Dampoort perron 11','Destelbergen');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Dampoort perron 11</span><span class="ovDirection ml-3 text-right">Destelbergen</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(203450,8,'Dampoort perron 12','Destelbergen');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Dampoort perron 12</span><span class="ovDirection ml-3 text-right">Destelbergen</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(201138,8,'Dampoort perron 13','Gentbrugge');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Dampoort perron 13</span><span class="ovDirection ml-3 text-right">Gentbrugge</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(200134,8,'Gentbruggestraat (Vijfhoek)','Dampoort');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Gentbruggestraat (Vijfhoek)</span><span class="ovDirection ml-3 text-right">Dampoort</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(202362,8,'Industrieweg','Gent Sint-Pieters');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Industrieweg</span><span class="ovDirection ml-3 text-right">Gent Sint-Pieters</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(205910,8,'Sint-Pietersstation perron 10','Merelbeke');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 10</span><span class="ovDirection ml-3 text-right">Merelbeke</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(205913,8,'Sint-Pietersstation perron 13','Dampoort');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 13</span><span class="ovDirection ml-3 text-right">Dampoort</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(204912,8,'Sint-Pietersstation perron 2','Korenmarkt');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 2</span><span class="ovDirection ml-3 text-right">Korenmarkt</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(204918,8,'Sint-Pietersstation perron 8','Mariakerke');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 8</span><span class="ovDirection ml-3 text-right">Mariakerke</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(202453,8,'Stelplaats','Gent Sint-Pieters');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Stelplaats</span><span class="ovDirection ml-3 text-right">Gent Sint-Pieters</span>
+                                    </a>
+                                
+                            </div>
+                            <div class="carousel-item p-0" data-interval="false">
+                                <div class="d-flex flex-row" style="padding: 1rem;">
+                                    <i id="backModalBussen" class="material-icons clickable" onclick="$('#carouselOvStops').carousel('prev')">arrow_back</i><h5 id="ovStopName" class="mb-0 ml-3"></h5><div id="ovStopDirection" class="d-none"></div>
+                                </div>
+                                <iframe id="ovResultFrame" class="w-100" src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>                              
+                </div>
             </div>
         </div>
     </div>
-    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalBussen">
+
+    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalOvStops">
             <i class="material-icons">directions_bus</i>
     </button>
 </div>
@@ -261,6 +267,8 @@
         }
     }
 </script>
+
+<script src="/assets/js/main.js"></script>
 
     </body>
 </html>

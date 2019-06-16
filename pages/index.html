@@ -36,7 +36,7 @@ title: Home
                             <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/51.062979,3.750965/@51.06033,3.7519287,15z/data=!4m2!4m1!3e0" rel="noopener" target="_blank">TAXI DAWID</a>
                             <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Dampoort/@51.0556759,3.6745547,12z/data=!3m1!4b1!4m2!4m1!3e0" rel="noopener" target="_blank">DAMPOORT</a>
                             <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Industrieweg+232,+Mariakerke+9030+Gent,+België/@51.0572361,3.7008382,12.54z/data=!4m14!4m13!1m5!1m1!1s0x47c37694f6a091d5:0xa14fb7f72a695f2a!2m2!1d3.7688251!2d51.0537478!1m5!1m1!1s0x47c37049c2ee923b:0x268fc495b0688754!2m2!1d3.6705206!2d51.0867926!3e3" rel="noopener" target="_blank">ARTEVELDE</a>
-                            <button id="btnBusModal" type="button" class="button" data-toggle="modal" data-target="#modalBussen">
+                            <button id="btnBusModalBeta" type="button" class="button" data-toggle="modal" data-target="#modalOvStops">
                                     <i class="material-icons">directions_bus</i>
                             </button>
                         </div>
@@ -78,7 +78,7 @@ title: Home
                 <!-- Put here your favorite websites, with or without icon.
                     (this code is written for svg-icons added as markup) -->
                 {% for link in site.quicklinks %}
-                    <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %}target="_blank" rel="noopener"{% endif %}>
+                    <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %} target="_blank" rel="noopener"{% endif %}>
                         {{ link.icon }}
                         {{ link.title | remove: "<p>" | remove: "</p>"  }}
                     </a>
@@ -87,31 +87,40 @@ title: Home
         </div>
     </div>
 
-    <div class="modal fade" id="modalBussen" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
+    <div class="modal" id="modalOvStops" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalBussenTitle">Bus- en tramverbindingen</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
-                </button>
-            </div>
-            <div class="modal-body">
-                {% assign stops = site.ov-stops | sort:"name" %}
-                {% for stop in stops %}
-                    <a class="d-flex justify-content-between" href="https://www.delijn.be/realtime/{{ stop.ov-number }}/{{ stop.show-outcome }}" target="_blank" rel="noopener">
-                        <span class="ov-name txt-modern">{{ stop.name }}</span><span class="ov-direction ml-3 text-right">{{ stop.direction }}</span>
-                    </a>
-                {% endfor %}
-                
-            </div>
-            <div class="modal-footer d-none">
-                <button type="button" class="button" data-dismiss="modal">Close</button>
-            </div>
+                <div class="modal-header">
+                    <h5 class="modal-title fontw-700 txt-uppc" id="modalBussenTitle">Bus- en tramverbindingen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="carouselOvStops" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+                        <div class="carousel-inner" style="height: calc(100vh - 3.5rem - 66px);" data-interval="false">
+                            <div class="carousel-item active" data-interval="false" style="padding: 1rem;">
+                                {% assign stops = site.ov-stops | sort:"name" %}
+                                {% for stop in stops %}
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop({{ stop.ov-number }},{{ stop.show-outcome }},'{{ stop.name }}','{{ stop.direction }}');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">{{ stop.name }}</span><span class="ovDirection ml-3 text-right">{{ stop.direction }}</span>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                            <div class="carousel-item p-0" data-interval="false">
+                                <div class="d-flex flex-row" style="padding: 1rem;">
+                                    <i id="backModalBussen" class="material-icons clickable" onclick="$('#carouselOvStops').carousel('prev')">arrow_back</i><h5 id="ovStopName" class="mb-0 ml-3"></h5><div id="ovStopDirection" class="d-none"></div>
+                                </div>
+                                <iframe id="ovResultFrame" class="w-100" src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>                              
+                </div>
             </div>
         </div>
     </div>
-    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalBussen">
+
+    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalOvStops">
             <i class="material-icons">directions_bus</i>
     </button>
 </div>

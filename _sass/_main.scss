@@ -5,6 +5,9 @@
     --bd-radius: 8px;
 
     --version-number: 'v3.7.4';
+
+    --font-main: 'Product sans';
+    --font-3: 'Roboto Condensed', sans-serif;
 }
 
 *, *:hover {
@@ -99,6 +102,14 @@ p {
 
 .bg-color-blue {
     background-color: var(--blue);
+}
+
+.font-3 {
+    font-family: var(--font-3) !important;
+}
+
+.clickable {
+    cursor: pointer;
 }
 
 /* THEME DIALOG */
@@ -367,7 +378,7 @@ p {
         margin-right: 10px;
     }
 
-    #btnBusModal {
+    #btnBusModalBeta {
         margin-right: 10px;
     }
 
@@ -571,7 +582,112 @@ p {
         color: grey;
     }
 
+/* MODAL BUSSEN CAROUSEL OVERZICHT */
+    .modal-title#modalBussenTitle {
+        text-transform: uppercase;
+        font-family: var(--font-main);
+        letter-spacing: 2px;
+    }
+
+    a.ovStop {
+        padding-top: 15px;
+        padding-bottom: 13px;
+        width: 100%;
+        border-bottom: 2px solid #4285F4;
+    }
+
+    a.ovStop:first-child {
+        padding-top: 0px;
+    }
+
+    a.ovStop:last-child {
+        padding-bottom: 0px;
+        border: none;
+    }
+
+    a.ovStop span.ovName {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        // font-size: 1.3rem;
+    }
+
+    #ovStopName {
+        font-family: var(--font-main);
+        text-transform: initial;
+        letter-spacing: normal;
+    }
+
+    a.ovStop span.ovDirection {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-style: normal;
+        color: #969696;
+    }
+
+/* MODAL BUSSEN RESULT */
+    #collapseOvResult {
+        justify-content: center;
+        align-items: center;
+        position: fixed !important;
+        top: 0px !important;
+        bottom: 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+    }
+
+    #collapseOvResult.show, #collapseOvResult.collapsing {
+        display: flex;
+    }
+
+    #collapseOvResult > .card-body {
+        width: auto;
+        max-width: 500px;
+        height: 100vh;
+        // max-height: calc(100vh - 3.5rem);
+        padding: 0px;
+        overflow: hidden;
+        border-radius: var(--bd-radius);
+    }
+
+    #collapseOvResult > .card-body #ovStopName{
+        font-family: var(--font-main);
+    }
+
+    #collapseOvResult .card-header{
+        padding: 1rem 1rem;
+    }
+
 /* MEDIA QUERIES */
+    @media (max-width: 576px) {
+        #modalOvStops > div {
+            margin: 0px;
+            height: 0vh;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            position: fixed;
+            animation-name: modalBussenOpen;
+            animation-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            animation-fill-mode: forwards;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            max-height: calc(100vh - 4rem);
+        }
+
+        /* #modalOvStops.show > div {
+            animation-name: modalBussenClose;
+            animation-duration: 0.5s;
+            animation-fill-mode: forwards;
+        } */
+    }
+
     @media (min-width: 576px) {
         #theme-dialog.toggle-active + .site-content {
             transform: scale(0.8) translateY(20px);
@@ -601,4 +717,15 @@ p {
             box-shadow: var(--shadow);
             border-radius: var(--bd-radius);
         }
+    }
+
+/* CSS ANIMATIONS */
+    @keyframes modalBussenOpen {
+        from {height: 0vh;}
+        to {height: 100vh;}
+    }
+
+    @keyframes modalBussenClose {
+        from {height: 100vh;}
+        to {height: 0vh;}
     }
