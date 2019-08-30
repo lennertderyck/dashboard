@@ -31,12 +31,22 @@
 
 [data-theme*="light"] {
   --accent-main: #4285F4;
-  --accent-1: #3E4041;
-  --accent-2: #2F3132;
-  --accent-2-dark: #222222;
-  --txt-color: white;
-  --icons: white;
-  --searchbar-color: #e0e0e0;
+  --accent-1: #F7F7F7;
+  --accent-2: #E9E9E9;
+  --accent-2-dark: #DADADA;
+  --txt-color: #5c5c5c;
+  --icons: #5c5c5c;
+  --searchbar-color: #5c5c5c;
+  --settings-bg-color: #222222; }
+
+[data-theme*="green"] {
+  --accent-main: #4285F4;
+  --accent-1: #8BC34A;
+  --accent-2: #a4ce74;
+  --accent-2-dark: #8db165;
+  --txt-color: #ffffff;
+  --icons: #ffffff;
+  --searchbar-color: #5c5c5c;
   --settings-bg-color: #222222; }
 
 /* ******* */
@@ -119,6 +129,38 @@ p {
   cursor: pointer; }
 
 /****************************************************************/
+/* BUTTON */
+.btn:not([class*="toggle"]) {
+  font-family: var(--font-main);
+  color: white;
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 120px;
+  min-width: fit-content;
+  display: inline-flex;
+  align-content: center;
+  align-items: center;
+  user-select: none;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16); }
+  .btn:not([class*="toggle"]):hover {
+    color: white;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
+  .btn:not([class*="toggle"]) svg, .btn:not([class*="toggle"]) .material-icons, .btn:not([class*="toggle"]) .button [class*="cls"] {
+    fill: white;
+    height: 23px;
+    margin-right: 9px;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0ms; }
+  .btn:not([class*="toggle"]).small {
+    padding: 2px 6px;
+    text-transform: lowercase;
+    letter-spacing: 0px;
+    font-weight: 200;
+    font-size: 13px; }
+
 /* SECTIONS */
 #fastnav {
   height: 30vh;
@@ -129,7 +171,8 @@ p {
     border-radius: 120px; }
     #fastnav .track .btn:not(#btnBusModalBeta) {
       border-radius: 120px;
-      box-shadow: none; }
+      box-shadow: none;
+      color: var(--txt-color); }
       #fastnav .track .btn:not(#btnBusModalBeta):hover {
         background: var(--accent-2-dark);
         box-shadow: none; }
@@ -146,6 +189,8 @@ p {
   background: var(--accent-2); }
   #searchbox:focus, #searchbox :focus-within {
     background: var(--accent-2-dark); }
+  #searchbox:hover {
+    background: var(--accent-2-dark); }
   #searchbox #searchfield1 {
     background: none;
     border: none;
@@ -159,7 +204,7 @@ p {
     outline: none;
     color: var(--searchbar-color); }
     #searchbox #searchfield1::placeholder {
-      color: inherit;
+      color: var(--txt-color);
       user-select: none; }
   #searchbox img {
     position: absolute;
@@ -190,49 +235,18 @@ p {
   right: 20px;
   bottom: 20px;
   max-width: 250px; }
-  #collapseCorner #collapseMore {
+  #collapseCorner #collapseMore, #collapseCorner #collapseMore:focus, #collapseCorner #collapseMore:focus-within {
     color: var(--color);
     overflow: hidden;
     border: none;
     border-radius: var(--bd-radius);
     max-height: calc(85vh - 20px - 44px - 16px);
     overflow-y: scroll;
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
-    #collapseCorner #collapseMore .card {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2) !important; }
+    #collapseCorner #collapseMore .card, #collapseCorner #collapseMore:focus .card, #collapseCorner #collapseMore:focus-within .card {
       background: var(--accent-2); }
-
-#collapseCorner > .collapse *, #collapseCorner > .collapsing *, #collapseCorner > .collapse:not(.show) * {
-  color: var(--color); }
-
-/* BUTTON */
-.btn:not([class*="toggle"]) {
-  font-family: var(--font-main);
-  color: var(--txt-color);
-  font-weight: 700;
-  white-space: nowrap;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 10px;
-  border-radius: 120px;
-  min-width: fit-content;
-  display: inline-flex;
-  align-content: center;
-  align-items: center;
-  user-select: none;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16); }
-  .btn:not([class*="toggle"]):hover {
-    color: var(--txt-color);
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
-  .btn:not([class*="toggle"]) svg, .btn:not([class*="toggle"]) .material-icons, .btn:not([class*="toggle"]) .button [class*="cls"] {
-    fill: white;
-    height: 23px;
-    margin-right: 9px;
-    transition: 0.2s ease-in-out;
-    transition-delay: 0ms; }
-  .btn:not([class*="toggle"]).small {
-    padding: 2px 6px;
-    text-transform: lowercase;
-    letter-spacing: 0px; }
+    #collapseCorner #collapseMore *:not(button), #collapseCorner #collapseMore:focus *:not(button), #collapseCorner #collapseMore:focus-within *:not(button) {
+      color: var(--txt-color); }
 
 /* VERSION */
 .version {
