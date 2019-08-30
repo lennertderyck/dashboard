@@ -31,7 +31,7 @@ fields:
   label: show quicklink
   default: true
 pages:
-- _quicklinks/local-5500.md
-- _quicklinks/gh-gr-7.md
-- _quicklinks/local-4000.md
 - _quicklinks/Spotify.md
+- _quicklinks/local-4000.md
+- _quicklinks/gh-gr-7.md
+- _quicklinks/local-5500.md
