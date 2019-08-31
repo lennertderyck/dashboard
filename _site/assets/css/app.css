@@ -58,10 +58,12 @@ a, a:hover {
   color: inherit; }
 
 html#theme-doesnt-exists {
-  background-color: #2F3132; }
+  background-color: #2F3132;
+  height: 100%; }
 
 html:not(#theme-doesnt-exists) {
-  background-color: var(--accent-1); }
+  background-color: var(--accent-1);
+  height: 100%; }
 
 body {
   position: relative;
