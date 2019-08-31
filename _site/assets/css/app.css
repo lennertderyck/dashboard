@@ -1,6 +1,7 @@
 :root {
   --shadow: 0 2px 2px 0 rgba(0,0,0,0.16);
   --bd-radius: 8px;
+  --border-radius: 8px;
   --version-number: 'v4.5.3';
   --font-main: 'Product sans';
   --font-3: 'Roboto Condensed', sans-serif; }
@@ -113,9 +114,9 @@ p {
   font-family: 'Roboto'; }
 
 .txt-modern {
-  font-family: 'Product sans';
+  text-transform: uppercase;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  font-weight: bold; }
 
 .bg-color-blue {
   background-color: var(--blue); }
@@ -245,6 +246,17 @@ p {
       background: var(--accent-2); }
     #collapseCorner #collapseMore *:not(button), #collapseCorner #collapseMore:focus *:not(button), #collapseCorner #collapseMore:focus-within *:not(button) {
       color: var(--txt-color); }
+
+#modalOvStops .modal-dialog .modal-content {
+  height: 100vh; }
+  #modalOvStops .modal-dialog .modal-content .ovStop {
+    padding: 15px 0px;
+    width: 100%; }
+    #modalOvStops .modal-dialog .modal-content .ovStop:first-child {
+      padding-top: 0px; }
+    #modalOvStops .modal-dialog .modal-content .ovStop:last-child {
+      border-bottom: none;
+      padding-bottom: 0px; }
 
 /* VERSION */
 .version {

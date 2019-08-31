@@ -42,173 +42,33 @@ title: Home
 
 
     <div id="collapseCorner" class="d-flex flex-column justify-content-end align-items-end">
-            <div class="collapse" id="collapseMore">
-                <div class="card card-body txt-color-white">
-                    <h2>More</h2>
-                    <p class="mb-3">The new personal startpage got an entire make-over, based on the new version of Google's Material Design.</p>
-                    <p class="mb-3">It's fresher and easier to use.</p>
-                    <p class="mb-3 fontw-700">This personal startpage is optimized for most mobile devices.</p>
-                    <p class="mb-3"> Get your own at <a href="https://github.com/lennertderyck/personal-startpage" target="_blank" rel="noopener">Github</a>.</p>
-                    <!--http://www.bootstraptoggle.com/-->
-                    <div>
-                        <h5>Set theme</h5>
-                        <!--Themebuttons-->
-                        <button class="btn small bg-color-main" onclick="setTheme('default')">default</button>
-                        <button class="btn small bg-color-main" onclick="setTheme('dark')">dark</button>
-                        <button class="btn small bg-color-main" onclick="setTheme('green')">green</button>
-                    </div>
-                    <div class="w-100 d-none">
-                        <input type="checkbox" id="toggleTheme" data-toggle="toggle" data-on="Dark theme" data-off="Light theme" data-style="w-100 bd-radius">
-                    </div>
-                    <div class="version">
-                    </div>
+        <div class="collapse" id="collapseMore">
+            <div class="card card-body txt-color-white">
+                <h2>More</h2>
+                <p class="mb-3">The new personal startpage got an entire make-over, based on the new version of Google's Material Design.</p>
+                <p class="mb-3">It's fresher and easier to use.</p>
+                <p class="mb-3 fontw-700">This personal startpage is optimized for most mobile devices.</p>
+                <p class="mb-3"> Get your own at <a href="https://github.com/lennertderyck/personal-startpage" target="_blank" rel="noopener">Github</a>.</p>
+                <!--http://www.bootstraptoggle.com/-->
+                <div>
+                    <h5>Set theme</h5>
+                    <!--Themebuttons-->
+                    <button class="btn small bg-color-main" onclick="setTheme('default')">default</button>
+                    <button class="btn small bg-color-main" onclick="setTheme('dark')">dark</button>
+                    <button class="btn small bg-color-main" onclick="setTheme('green')">green</button>
                 </div>
-            </div>
-    
-            <button id="btnCollapseCorner" class="btn mt-3 bg-color-main" type="button" data-toggle="collapse" data-target="#collapseMore" aria-expanded="false" aria-controls="collapseMore">
-                    <i class="material-icons mr-0">settings</i>
-            </button>
-        </div>
-</div>
-
-
-
-<!-- OLD
-
-<div id="theme-dialog" class="">
-    <div class="container">
-        <div>
-            <h1 class="my-0">Choose your theme</h1>
-            <h3 class="mt-0" id="currentTheme"></h3>
-            <div id="buttons-theme">
-                <button onclick="setTheme('2f3132')">dark theme</button>
-                <button onclick="setTheme('e9e9e9')">default theme</button>
-            </div>
-            <br>
-            <p>
-                <small>
-                    You can always change the theme by clicking 'more'.
-                </small>
-            </p>
-        </div>
-    </div>
-</div>
-<div class="site-content" data-theme="main">
-    <div class="row" id="fastnav">
-        <div class="col">
-            <div class="row container-fastnav hide-on-xs hide-on-sm">
-                <div class="col-auto">
-                        {% for setting in site.forestry-settings %}
-                        <div class="fastnav" id="fastnav-left" forestry-setting="{{ setting.show_nav_top_left }}">
-                            <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>round-directions-24px</title><g id="Rounded"><path d="M21.7,11.29l-9-9a1,1,0,0,0-1.41,0l-9,9a1,1,0,0,0,0,1.41l9,9a1,1,0,0,0,1.41,0l9-9A1,1,0,0,0,21.7,11.29ZM14,14.5V12H10v2a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1h5V7.5l3.14,3.15a.48.48,0,0,1,0,.71Z" transform="translate(-2 -2)"/></g></svg>
-                            <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/51.062979,3.750965/@51.06033,3.7519287,15z/data=!4m2!4m1!3e0" rel="noopener" target="_blank">TAXI DAWID</a>
-                            <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Dampoort/@51.0556759,3.6745547,12z/data=!3m1!4b1!4m2!4m1!3e0" rel="noopener" target="_blank">DAMPOORT</a>
-                            <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Industrieweg+232,+Mariakerke+9030+Gent,+België/@51.0572361,3.7008382,12.54z/data=!4m14!4m13!1m5!1m1!1s0x47c37694f6a091d5:0xa14fb7f72a695f2a!2m2!1d3.7688251!2d51.0537478!1m5!1m1!1s0x47c37049c2ee923b:0x268fc495b0688754!2m2!1d3.6705206!2d51.0867926!3e3" rel="noopener" target="_blank">ARTEVELDE</a>
-                            <button id="btnBusModalBeta" type="button" class="button" data-toggle="modal" data-target="#modalOvStops">
-                                    <i class="material-icons">directions_bus</i>
-                            </button>
-                        </div>
-                        {% endfor %}
-                </div>
-                <div class="col-auto">
-                    {% for setting in site.forestry-settings %}
-                    <div class="fastnav" id="fastnav-right" forestry-setting="{{ setting.right }}">
-                        <svg id="shortcut_logo_stack" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.44 282.44"><defs></defs><title>Naamloos-4</title><path class="cls-1" d="M141.89,1A141.22,141.22,0,1,0,283.11,142.25,141.22,141.22,0,0,0,141.89,1ZM224.56,198.8l-82.69,20.62L59.21,198.8V178.19l82.66,20.61,82.69-20.61Zm0-46.06-82.69,20.61L59.21,152.74V132.12l82.66,20.62,82.69-20.62Zm0-46.38-82.69,20.7-82.66-20.7V85.7l82.66-20.61L224.56,85.7Z" transform="translate(-0.67 -1.03)"/></svg>
-                        <a class="button link" href="https://storage.lennertderyck.be/">PERSOONLIJK</a>
-                        <a class="button link" href="https://derycklennert.stackstorage.com/">WVD</a>
-                        <a class="button link" href="https://6printmedia.stackstorage.com/">6PM</a>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row" id="searchbar">
-        <div class="col">
-            {% for setting in site.forestry-settings %}
-            <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="{{ setting.show_google_logo }}" height="100px" onclick="window.open('https://www.google.be');">
-            {% endfor %}
-            <div class="container-searchbar">
-                <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
-                    {% for setting in site.forestry-settings %}
-                    <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="{{ setting.placeholder_search_bar }}" type="text" onload="value='hello'" spellcheck="false">
-                    {% endfor %}
-                    <label for="searchfield1"></label>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="row" id="shortcuts">
-        <div class="col d-flex align-items-center justify-content-center">
-            {% for setting in site.forestry-settings %}
-            <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting="{{ setting.show_quicklinks }}">
-            {% endfor %}
-                {% for link in site.quicklinks %}
-                    <a class="button" href="{{ link.quicklink-url }}" {% if link.new-tab == true %} target="_blank" rel="noopener"{% endif %}>
-                        {{ link.icon }}
-                        {{ link.title | remove: "<p>" | remove: "</p>"  }}
-                    </a>
-                {% endfor %} 
-            </div>
-        </div>
-    </div>
-
-    <div class="modal" id="modalOvStops" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title fontw-700 txt-uppc" id="modalBussenTitle">Bus- en tramverbindingen</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
-                    </button>
-                </div>
-                <div class="modal-body p-0">
-                    <div id="carouselOvStops" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
-                        <div class="carousel-inner" style="height: calc(100vh - 3.5rem - 73px);" data-interval="false">
-                            <div class="carousel-item active" data-interval="false" style="padding: 1rem;">
-                                {% assign stops = site.ov-stops | sort:"name" %}
-                                {% for stop in stops %}
-                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop({{ stop.ov-number }},{{ stop.show-outcome }},'{{ stop.name }}','{{ stop.direction }}');$('#carouselOvStops').carousel('next')">
-                                        <span class="ovName">{{ stop.name }}</span><span class="ovDirection ml-3 text-right">{{ stop.direction }}</span>
-                                    </a>
-                                {% endfor %}
-                            </div>
-                            <div class="carousel-item p-0 h-100" data-interval="false">
-                                <div class="d-flex flex-row" style="padding: 1rem;">
-                                    <i id="backModalBussen" class="material-icons clickable" onclick="$('#carouselOvStops').carousel('prev')">arrow_back</i><h5 id="ovStopName" class="mb-0 ml-3"></h5><div id="ovStopDirection" class="d-none"></div>
-                                </div>
-                                <iframe id="ovResultFrame" class="w-100" style="height: calc(100% - 56px)" src="" frameborder="0"></iframe>
-                            </div>
-                        </div>
-                    </div>                              
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalOvStops">
-            <i class="material-icons">directions_bus</i>
-    </button>
-</div>
-
-<div id="collapseCorner" class="d-flex flex-column justify-content-end align-items-end">
-    <div class="collapse" id="collapseMore">
-        <div class="card card-body bg-color-2 txt-color-white">
-            <h2>More</h2>
-            <p class="mb-3">The new personal startpage got an entire make-over, based on the new version of Google's Material Design.</p>
-            <p class="mb-3">It's fresher and easier to use.</p>
-            <p class="mb-3 p-3 bg-color-blue txt-color-white bd-radius">The personal startpage is now optimized for most mobile devices.</p>
-            <p class="mb-3"> Get your own at <a href="https://github.com/lennertderyck/personal-startpage" target="_blank" rel="noopener">Github</a>.</p>
-            <div id="buttons-theme" class="small column">
-                    <button onclick="setTheme('2f3132')">set dark theme</button>
-                    <button onclick="setTheme('e9e9e9')">set default theme</button>
+                <div class="w-100 d-none">
+                    <input type="checkbox" id="toggleTheme" data-toggle="toggle" data-on="Dark theme" data-off="Light theme" data-style="w-100 bd-radius">
                 </div>
                 <div class="version">
                 </div>
+            </div>
         </div>
+
+        <button id="btnCollapseCorner" class="btn mt-3 bg-color-main" type="button" data-toggle="collapse" data-target="#collapseMore" aria-expanded="false" aria-controls="collapseMore">
+                <i class="material-icons mr-0">settings</i>
+        </button>
     </div>
-    <button class="button mt-3" type="button" data-toggle="collapse" data-target="#collapseMore" aria-expanded="false" aria-controls="collapseMore" style="width: fit-content;">
-        <i class="material-icons">settings</i>
-    </button>
+
+    {% include modal-ovstops.html %}
 </div>
--->
