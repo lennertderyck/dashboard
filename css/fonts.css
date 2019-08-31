@@ -1,27 +1,25 @@
 @font-face {
-    font-family: 'Product Sans';
-    src: url('../assets/fonts/ProductSans-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic; 
+    font-family: 'Product sans';
+    src: url(../fonts/product_sans_reg.ttf);
+    font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Product Sans';
-    src: url('../assets/fonts/ProductSans-Italic.woff2') format('woff2');
-    font-weight: normal;
+    font-family: 'Product sans';
+    src: url(../fonts/product_sans_italic.ttf);
+    font-weight: 500 italic;
     font-style: italic;
 }
 
 @font-face {
-    font-family: 'Product Sans';
-    src: url('../assets/fonts/ProductSans-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Product sans';
+    src: url(../fonts/product_sans_bold.ttf);
+    font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Product Sans';
-    src: url('../assets/fonts/ProductSans-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'Product sans';
+    src: url(../fonts/product_sans_bold_italic.ttf);
+    font-weight: 700 italic;
+    font-style: italic;
 }
