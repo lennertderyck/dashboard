@@ -47,7 +47,7 @@ Now you can edit the quicklinks and themes at the left side.
     --settings-bg-color: #222222;
 }
 ```
-- Add a button in the index.html file and between the quotation marks in the javascript function you fill in the name of your theme (this place will be **indecated with ```<!--Themebuttons-->```**
+- Add a button in the index.html file and between the quotation marks in the javascript function you fill in the name of your theme (this place will be **indecated with ```html <!--Themebuttons-->```**)
 ```html
 <button onclick="setTheme('yourthemename')">set dark theme</button>
 ```
