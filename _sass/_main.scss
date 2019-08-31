@@ -348,6 +348,10 @@ p {
     }
 }
 
+#carouselOvStops > div > div.carousel-item.h-100.active {
+    overflow: scroll;
+}
+
 /* VERSION */
 .version {
     margin-top: 10px;
