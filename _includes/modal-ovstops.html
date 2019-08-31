@@ -9,13 +9,13 @@
                 </button>
             </div>
             <div class="modal-body p-0">
-                <div id="carouselOvStops" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
-                    <div class="carousel-inner" data-interval="false">
-                        <div class="carousel-item active" data-interval="false" style="padding: 1rem;">
-                            {% assign stops = site.ov-stops | sort:"name" %}
+                <div id="carouselOvStops" class="carousel slide h-100" data-ride="carousel" data-interval="false" data-touch="true">
+                    <div class="carousel-inner h-100" data-interval="false">
+                        <div class="carousel-item active h-100" data-interval="false" style="padding: 1rem;">
+                            {% assign stops = site.ov-stops | sort:"title" %}
                             {% for stop in stops %}
-                                <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop({{ stop.ov-number }},{{ stop.show-outcome }},'{{ stop.name }}','{{ stop.direction }}');$('#carouselOvStops').carousel('next')">
-                                    <span class="ovName fontw-600 uppc lspacing-1">{{ stop.name }}</span><span class="ovDirection ml-3 text-right">{{ stop.direction }}</span>
+                                <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop({{ stop.ov-number }},{{ stop.show-outcome }},'{{ stop.title }}','{{ stop.direction }}');$('#carouselOvStops').carousel('next')">
+                                    <span class="ovName fontw-600 uppc lspacing-1">{{ stop.title }}</span><span class="ovDirection ml-3 text-right">{{ stop.direction }}</span>
                                 </a>
                             {% endfor %}
                         </div>
