@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<head>
+    <script src="./assets/js/cookies.js"></script>
+    <script src="./assets/js/themes.js"></script>
+
+    
+    <title>Nieuw tabblad</title>
+    
+
+    <!-- SET BROWSER THEMECOLOR -->
+    <meta id="siteColor" name="theme-color" content="#84db94">
+    <script>
+        function changeThemeColor() {
+            var cookieThemeValue = readCookie('theme');
+            document.getElementById('siteColor').setAttribute('content', '#' + cookieThemeValue)
+        }
+
+        window.onload = changeThemeColor();
+    </script>
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width">
+    
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/app.css">
+
+    <!-- RECOURCES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,|Roboto:400,500,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ce.lennertderyck.be/library/elements.js"></script>
+    
+    <!--ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- THEMES SETTINGS -->
+    <link href="./css/themes.css" rel="stylesheet">
+</head>
+<html id="theme-doesnt-exists">
+    <body id="body" data-theme="2f3132">
+        <script src="./assets/js/load-theme.js"></script>
+            <div id="theme-dialog" class="">
+    <div class="container">
+        <div>
+            <h1 class="my-0">Choose your theme</h1>
+            <h3 class="mt-0" id="currentTheme"></h3>
+            <div id="buttons-theme">
+                <button onclick="setTheme('2f3132')">dark theme</button>
+                <button onclick="setTheme('e9e9e9')">default theme</button>
+            </div>
+            <br>
+            <p>
+                <small>
+                    You can always change the theme by clicking 'more'.
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="site-content" data-theme="main">
+    <div class="row" id="fastnav">
+        <div class="col">
+            <div class="row container-fastnav hide-on-xs hide-on-sm">
+                <div class="col-auto">
+                        
+                        <div class="fastnav" id="fastnav-left" forestry-setting="">
+                            <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>round-directions-24px</title><g id="Rounded"><path d="M21.7,11.29l-9-9a1,1,0,0,0-1.41,0l-9,9a1,1,0,0,0,0,1.41l9,9a1,1,0,0,0,1.41,0l9-9A1,1,0,0,0,21.7,11.29ZM14,14.5V12H10v2a1,1,0,0,1-1,1H9a1,1,0,0,1-1-1V11a1,1,0,0,1,1-1h5V7.5l3.14,3.15a.48.48,0,0,1,0,.71Z" transform="translate(-2 -2)"/></g></svg>
+                            <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/51.062979,3.750965/@51.06033,3.7519287,15z/data=!4m2!4m1!3e0" rel="noopener" target="_blank">TAXI DAWID</a>
+                            <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Dampoort/@51.0556759,3.6745547,12z/data=!3m1!4b1!4m2!4m1!3e0" rel="noopener" target="_blank">DAMPOORT</a>
+                            <a class="button link" href="https://www.google.be/maps/dir/Mijn+locatie/Industrieweg+232,+Mariakerke+9030+Gent,+België/@51.0572361,3.7008382,12.54z/data=!4m14!4m13!1m5!1m1!1s0x47c37694f6a091d5:0xa14fb7f72a695f2a!2m2!1d3.7688251!2d51.0537478!1m5!1m1!1s0x47c37049c2ee923b:0x268fc495b0688754!2m2!1d3.6705206!2d51.0867926!3e3" rel="noopener" target="_blank">ARTEVELDE</a>
+                            <button id="btnBusModalBeta" type="button" class="button" data-toggle="modal" data-target="#modalOvStops">
+                                    <i class="material-icons">directions_bus</i>
+                            </button>
+                        </div>
+                        
+                </div>
+                <div class="col-auto">
+                    
+                    <div class="fastnav" id="fastnav-right" forestry-setting="">
+                        <svg id="shortcut_logo_stack" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.44 282.44"><defs></defs><title>Naamloos-4</title><path class="cls-1" d="M141.89,1A141.22,141.22,0,1,0,283.11,142.25,141.22,141.22,0,0,0,141.89,1ZM224.56,198.8l-82.69,20.62L59.21,198.8V178.19l82.66,20.61,82.69-20.61Zm0-46.06-82.69,20.61L59.21,152.74V132.12l82.66,20.62,82.69-20.62Zm0-46.38-82.69,20.7-82.66-20.7V85.7l82.66-20.61L224.56,85.7Z" transform="translate(-0.67 -1.03)"/></svg>
+                        <a class="button link" href="https://storage.lennertderyck.be/">PERSOONLIJK</a>
+                        <a class="button link" href="https://derycklennert.stackstorage.com/">WVD</a>
+                        <a class="button link" href="https://6printmedia.stackstorage.com/">6PM</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="searchbar">
+        <div class="col">
+            
+            <img style="user-select: unset !important; pointer-events: unset !important;" src="../images/logo_google_simple.svg" forestry-setting="true" height="100px" onclick="window.open('https://www.google.be');">
+            
+            <div class="container-searchbar">
+                <form id="searchbar_focus" method="get" action="https://www.google.com/search" target="_self">
+                    
+                    <input id="searchfield1" autocomplete="off" autofocus="autofocus" name="q" placeholder="zoeken" type="text" onload="value='hello'" spellcheck="false">
+                    
+                    <label for="searchfield1"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row" id="shortcuts">
+        <div class="col d-flex align-items-center justify-content-center">
+            
+            <div class="container-shortcuts hide-on-xs hide-on-sm" forestry-setting="true">
+            
+                <!-- Put here your favorite websites, with or without icon.
+                    (this code is written for svg-icons added as markup) -->
+                
+                    <a class="button" href="https://gdmgent-1819-nmd3.github.io/1819-nmd3-project-gr-07/" >
+                        <i data-feather="github"></i>
+                        GH GR 07
+                    </a>
+                
+                    <a class="button" href="https://open.spotify.com" >
+                        <svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.49 167.49"><defs><style>.cls-1{fill:none;}</style></defs><title>Naamloos-1</title><path class="cls-1" d="M421,213.28A83.74,83.74,0,1,0,504.74,297,83.75,83.75,0,0,0,421,213.28Zm38.4,120.78a5.22,5.22,0,0,1-7.18,1.74c-19.66-12-44.41-14.73-73.56-8.07a5.22,5.22,0,0,1-2.33-10.18c31.9-7.29,59.27-4.15,81.34,9.34A5.21,5.21,0,0,1,459.4,334.06Zm10.25-22.8a6.53,6.53,0,0,1-9,2.15c-22.51-13.83-56.82-17.84-83.45-9.76a6.53,6.53,0,1,1-3.79-12.49c30.41-9.23,68.22-4.76,94.07,11.12A6.53,6.53,0,0,1,469.65,311.26Zm.88-23.74c-27-16-71.52-17.51-97.29-9.69a7.83,7.83,0,0,1-4.54-15c29.58-9,78.75-7.24,109.83,11.21a7.83,7.83,0,0,1-8,13.47Z" transform="translate(-337.25 -213.28)"/></svg>
+                        Spotify
+                    </a>
+                
+                    <a class="button" href="http://127.0.0.1:4000" >
+                        <i class="material-icons">storage</i>
+                        Local:4000
+                    </a>
+                
+                    <a class="button" href="http://127.0.0.1:5500/" >
+                        <i class="material-icons">storage</i>
+                        Local:5500
+                    </a>
+                 
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modalOvStops" tabindex="-1" role="dialog" aria-labelledby="modalBussenTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fontw-700 txt-uppc" id="modalBussenTitle">Bus- en tramverbindingen</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" ><i class="material-icons" style="transform: scale(1.5) translateY(2px)">fullscreen_exit</i></span>
+                    </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div id="carouselOvStops" class="carousel slide" data-ride="carousel" data-interval="false" data-touch="true">
+                        <div class="carousel-inner" style="height: calc(100vh - 3.5rem - 73px);" data-interval="false">
+                            <div class="carousel-item active" data-interval="false" style="padding: 1rem;">
+                                
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(202454,8,'Admiraalstraat','Dampoort');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Admiraalstraat</span><span class="ovDirection ml-3 text-right">Dampoort</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(209450,8,'Dampoort perron 11','Destelbergen');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Dampoort perron 11</span><span class="ovDirection ml-3 text-right">Destelbergen</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(203450,8,'Dampoort perron 12','Destelbergen');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Dampoort perron 12</span><span class="ovDirection ml-3 text-right">Destelbergen</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(201138,8,'Dampoort perron 13','Gentbrugge');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Dampoort perron 13</span><span class="ovDirection ml-3 text-right">Gentbrugge</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(200134,8,'Gentbruggestraat (Vijfhoek)','Dampoort');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Gentbruggestraat (Vijfhoek)</span><span class="ovDirection ml-3 text-right">Dampoort</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(202362,8,'Industrieweg','Gent Sint-Pieters');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Industrieweg</span><span class="ovDirection ml-3 text-right">Gent Sint-Pieters</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(205910,8,'Sint-Pietersstation perron 10','Merelbeke');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 10</span><span class="ovDirection ml-3 text-right">Merelbeke</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(205913,8,'Sint-Pietersstation perron 13','Dampoort');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 13</span><span class="ovDirection ml-3 text-right">Dampoort</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(204912,8,'Sint-Pietersstation perron 2','Korenmarkt');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 2</span><span class="ovDirection ml-3 text-right">Korenmarkt</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(204918,8,'Sint-Pietersstation perron 8','Mariakerke');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Sint-Pietersstation perron 8</span><span class="ovDirection ml-3 text-right">Mariakerke</span>
+                                    </a>
+                                
+                                    <a class="d-flex justify-content-between ovStop clickable" onclick="ovStop(202453,8,'Stelplaats','Gent Sint-Pieters');$('#carouselOvStops').carousel('next')">
+                                        <span class="ovName">Stelplaats</span><span class="ovDirection ml-3 text-right">Gent Sint-Pieters</span>
+                                    </a>
+                                
+                            </div>
+                            <div class="carousel-item p-0 h-100" data-interval="false">
+                                <div class="d-flex flex-row" style="padding: 1rem;">
+                                    <i id="backModalBussen" class="material-icons clickable" onclick="$('#carouselOvStops').carousel('prev')">arrow_back</i><h5 id="ovStopName" class="mb-0 ml-3"></h5><div id="ovStopDirection" class="d-none"></div>
+                                </div>
+                                <iframe id="ovResultFrame" class="w-100" style="height: calc(100% - 56px)" src="" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>                              
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="btnBusModalCorner" type="button" class="button d-block d-md-none" data-toggle="modal" data-target="#modalOvStops">
+            <i class="material-icons">directions_bus</i>
+    </button>
+</div>
+
+<div id="collapseCorner" class="d-flex flex-column justify-content-end align-items-end">
+    <div class="collapse" id="collapseMore">
+        <div class="card card-body bg-color-2 txt-color-white">
+            <h2>More</h2>
+            <p class="mb-3">The new personal startpage got an entire make-over, based on the new version of Google's Material Design.</p>
+            <p class="mb-3">It's fresher and easier to use.</p>
+            <p class="mb-3 p-3 bg-color-blue txt-color-white bd-radius">The personal startpage is now optimized for most mobile devices.</p>
+            <p class="mb-3"> Get your own at <a href="https://github.com/lennertderyck/personal-startpage" target="_blank" rel="noopener">Github</a>.</p>
+            <div id="buttons-theme" class="small column">
+                    <button onclick="setTheme('2f3132')">set dark theme</button>
+                    <button onclick="setTheme('e9e9e9')">set default theme</button>
+                </div>
+                <div class="version">
+                </div>
+        </div>
+    </div>
+    <button class="button mt-3" type="button" data-toggle="collapse" data-target="#collapseMore" aria-expanded="false" aria-controls="collapseMore" style="width: fit-content;">
+        <i class="material-icons">settings</i>
+    </button>
+</div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    feather.replace()
+</script>
+
+<script>
+    function currentTheme() {
+        var cookieThemeValue = readCookie('theme');
+        document.getElementById("currentTheme").innerHTML = "current theme";
+    }
+
+    checkCookie();
+
+    function checkCookie() {
+        var themeExistance = getCookie("theme");
+        if (themeExistance == "") {
+            console.log('Theme doesnt exists');
+            var themeDialog = document.getElementById("theme-dialog");
+            themeDialog.classList.add("toggle-active");
+        } else {
+            console.log('Theme exists');
+            var themeDialog = document.getElementById("theme-dialog");
+            themeDialog.classList.remove("toggle-active");
+            document.getElementsByTagName("html")[0].removeAttribute("id");
+        }
+    }
+</script>
+
+<script src="/assets/js/main.js"></script>
+
+    </body>
+</html>
