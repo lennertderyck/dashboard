@@ -74,6 +74,48 @@ You can also add multiple buttons for multiple themes:
 }
 ```
 
+### CSS color settings
+#### The main color for buttons and accents
+```css
+--accent-main: #4285F4;
+```
+
+#### The main color for backgrounds
+```css
+--accent-1: #3E4041;
+```
+
+#### Color for the Fastnav containers (top) and searchbar when not focused or hovered
+```css
+--accent-2: #2F3132;
+```
+
+#### Color for the searchbar when focused or hovered or when fastnav links are hovered
+```css
+--accent-2-dark: #222222;
+```
+    
+#### The main color for text
+```css
+--txt-color: white;
+```  
+
+#### The fill color for icons in buttons and such
+```css
+--icons: white;
+``` 
+  
+#### The text color for the searchbar and searchbar placeholder
+```css
+--searchbar-color: #e0e0e0;
+```
+
+#### The background color for the settings screen
+*This css-variable is not in use, but will be implemented soon*
+```css
+--settings-bg-color: #222222;
+```
+
 ## Extras
 ### Live preview
 If you have Jekyll installed on your computer, you can make use of the Live preview function. This plugin will refresh your browser automatically after every adjustment to your code. This plugin is already installed.
