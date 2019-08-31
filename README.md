@@ -11,7 +11,7 @@ Ofcourse you can clone my project so you can edit the buttons and more.
 - Set up GitHub pages for this repo (Settings > GitHub Pages on the bottom)
 
 ### 2. Forestry.io
-*Forestry is the easiest way of managing your startpage. If you have some experience with Jekyll you can also try it using a code Editor, but Forestry makes it very easy to update stuff.*
+*Forestry is the easiest way of managing your startpage. If you have some experience with Jekyll you can also try it using a code Editor, but Forestry makes it very easy to update content.*
 - Visit <a href="https://forestry.io/signup" target="_blank" rel="noopener">Forestry.io</a> and make an account.
 Once your account is set up <a href="https://app.forestry.io/dashboard/#/add-site" target="_blank" rel="noopener">add your site</a>.
 - Connect your GitHub repo with your personal startpage with Forestry
