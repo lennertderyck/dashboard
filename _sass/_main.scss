@@ -71,19 +71,16 @@ a, a:hover {
 
 html#theme-doesnt-exists {
     background-color: #2F3132;
-    height: 100%;
 }
 
 html:not(#theme-doesnt-exists) {
-    background-color: var(--bg-main);
-    height: 100%;
+    background-color: var(--accent-1);
 }
 
 body {
     position: relative;
-    height: 100%;
     margin: 0px;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 #theme-dialog.toggle-active + .site-content {
