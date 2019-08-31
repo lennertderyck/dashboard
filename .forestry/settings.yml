@@ -1,0 +1,42 @@
+---
+new_page_extension: md
+auto_deploy: true
+admin_path: "/admin/"
+webhook_url: 
+sections:
+- type: heading
+  label: PERSONALIZATION
+- type: directory
+  path: _quicklinks
+  label: Quicklinks
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - quicklink
+- type: directory
+  path: _ov-stops
+  label: OV-stops
+  create: documents
+  match: "**/*"
+  templates:
+  - ov-stops
+- type: heading
+  label: OTHER
+- type: document
+  path: _forestry-settings/settings.md
+  label: Site settings
+upload_dir: themes
+public_path: "/themes"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - JEKYLL_ENV=staging
+  preview_output_directory: _site
+  install_dependencies_command: bundle install --path vendor/bundle
+  preview_docker_image: forestryio/ruby:2.6
+  mount_path: "/srv"
+  instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
+    --port 8080 --host 0.0.0.0 -d _site

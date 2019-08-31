@@ -1,0 +1,38 @@
+---
+label: ov-stops
+hide_body: true
+display_field: name
+fields:
+- type: text
+  name: name
+  label: name
+- name: ov-number
+  type: text
+  config:
+    required: false
+  label: stop number
+- type: text
+  name: direction
+  label: direction
+- type: number
+  name: show-outcome
+  label: show-outcome
+  default: '8'
+  config:
+    min: '3'
+    max: '20'
+- type: boolean
+  name: hide
+  label: hide
+pages:
+- _ov-stops/202453.md
+- _ov-stops/200134.md
+- _ov-stops/209450.md
+- _ov-stops/203450.md
+- _ov-stops/205910.md
+- _ov-stops/202362.md
+- _ov-stops/202454.md
+- _ov-stops/204918.md
+- _ov-stops/204912.md
+- _ov-stops/205913.md
+- _ov-stops/201138.md

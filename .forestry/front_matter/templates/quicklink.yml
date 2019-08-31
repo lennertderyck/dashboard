@@ -1,0 +1,37 @@
+---
+label: Quicklink
+hide_body: true
+display_field: title
+fields:
+- type: text
+  name: title
+  label: Human readable name
+  description: human-friendly label
+  config:
+    required: true
+- type: text
+  name: quicklink-url
+  label: Quicklink url
+  description: where should this quicklink lead to
+  default: https://
+  config:
+    required: true
+- name: new-tab
+  type: boolean
+  label: Open in new tab
+  description: open this link in a new tab
+- type: textarea
+  name: icon
+  label: icon
+  description: enter svg markup, or markup for Google, Fontawesome or Feather icons,
+    more info on GitHub
+  default: <i data-feather="NAME-OF-THE-ICON"></i>
+- type: boolean
+  name: hide_quicklink
+  label: show quicklink
+  default: true
+pages:
+- _quicklinks/Spotify.md
+- _quicklinks/local-4000.md
+- _quicklinks/gh-gr-7.md
+- _quicklinks/local-5500.md
