@@ -1,0 +1,50 @@
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script>
+    feather.replace()
+</script>
+
+<script>
+    function currentTheme() {
+        var cookieThemeValue = readCookie('theme');
+        document.getElementById("currentTheme").innerHTML = "current theme";
+    }
+
+    checkCookie();
+
+    function checkCookie() {
+        var themeExistance = getCookie("theme");
+        if (themeExistance == "") {
+            console.log('Theme doesnt exists');
+            var themeDialog = document.getElementById("theme-dialog");
+            themeDialog.classList.add("toggle-active");
+        } else {
+            console.log('Theme exists');
+            var themeDialog = document.getElementById("theme-dialog");
+            themeDialog.classList.remove("toggle-active");
+            document.getElementsByTagName("html")[0].removeAttribute("id");
+        }
+    }
+</script>
+
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+
+<script>
+    $(function() {
+        $('#toggle-one').bootstrapToggle();
+    })
+</script>
+
+<!--<script>
+    var toggleTheme = document.getElementById('toggleTheme');
+    var siteContent = document.getElementById('siteContent');
+     
+    if (toggleTheme.checked == false) {            
+        console.log("dark theme selected");
+        body.setAttribute('data-theme', 'dark');
+        createCookie('theme', 'dark');
+    }
+</script> -->

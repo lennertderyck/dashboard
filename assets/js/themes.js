@@ -38,10 +38,21 @@ function addFavicon(){
 }
 
 // SET THEMES > BUTTONS
-function setTheme(themecolor) {
+/* function setTheme(themecolor) {
     createCookie('theme',themecolor,1000)
     var dialogWindows = document.getElementById("theme-dialog");
     var body = document.getElementById("body");
     dialogWindows.classList.remove("toggle-active");
     body.setAttribute('data-theme', themecolor)
+} */
+
+function setTheme(themecolor) {
+    createCookie('theme',themecolor,1000)
+    // var dialogWindows = document.getElementById("theme-dialog");
+    // var body = document.getElementById("body");
+    // dialogWindows.classList.remove("toggle-active");
+    body.setAttribute('data-theme', themecolor)
 }
+
+cookieTheme = readCookie('theme');
+body.setAttribute('data-theme', cookieTheme);
