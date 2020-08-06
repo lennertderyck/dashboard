@@ -11,6 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.4"
+    "bootstrap": "^5.0.0-alpha1",
+    "browser-sync": "^2.26.12",
+    "cutleryjs": "^1.9.0",
+    "popper": "^1.0.1",
+    "sesam-collapse": "^5.3.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
   }
 }
