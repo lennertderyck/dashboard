@@ -1,0 +1,19 @@
+* {
+    transition: all .3s ease;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    line-height: initial;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+#app {
+
+}
