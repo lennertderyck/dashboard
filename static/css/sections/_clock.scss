@@ -1,6 +1,6 @@
 .clock {
     width: fit-content;
-    margin: 0 auto;
+    margin-right: auto;
     margin-top: -5rem;
     font-size: 10rem;
     margin-bottom: -2rem;
@@ -9,7 +9,7 @@
 .details {
     display: flex;
     width: fit-content;
-    margin: 0 auto;
+    margin-right: auto;
     
     &__devider {
         margin: 0 5px;

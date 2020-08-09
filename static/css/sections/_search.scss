@@ -1,4 +1,4 @@
-[data-section="search"] .search-results {
+[data-label="searchResults"] {
     position: fixed;
     bottom: 0px; left: 30px; right: 30px;
     padding: 2rem;
@@ -32,7 +32,22 @@
         }
         
         &__domain {
+            display: flex;
+            align-items: center;
             margin-bottom: 0.4rem;
+        }
+        
+        &__favicon {
+            display: flex;
+            align-items: center;
+            margin-right: .4rem;
+            
+            img {
+                height: 15px;
+            }
+        }
+        
+        &__domain-name {
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 80%;
@@ -73,7 +88,9 @@
                 text-transform: uppercase;
                 letter-spacing: 1px;
                 font-weight: 500;
+                font-size: 80%;
                 color: rgb(182, 182, 182);
+                vertical-align: middle;
             }
         }
         

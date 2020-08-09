@@ -1,2 +1,78 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Parcel Boilerplate</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content="Some information about this project for SEO purposes"><meta name="keywords" content="add, some, tags, for, SEO, purposes"><meta property="og:type" content="website"><meta property="og:url" content="git.lennertderyck.be"><meta property="og:title" content="a new project"><link rel="stylesheet" href="/bootstrap.bd506cf5.css"><link rel="stylesheet" href="/index.min.075acf29.css"><link rel="stylesheet" href="/animate.min.23398385.css"><link rel="stylesheet" href="/main.a467a4da.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"><link rel="stylesheet" href="https://use.typekit.net/hlx1nrx.css"><link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet"></head><body class="d-flex align-items-center justify-content-center" data-sesam-target="searchCollapse"> <div id="app"> <section data-section="clock" class="mt-n5"> <div class="clock"> <span class="clock__hh">23</span><span class="clock__divider">:</span><span class="clock__mm">40</span><span class="clock__ss"></span> </div> </section> <section data-section="details"> <div class="details"> <div class="details__day">Vrijdag, 7 Aug.</div> <div class="details__devider"> | </div> <div class="details__weather weather d-flex align-items-center align-content-center"> <i class="bx bxs-sun"></i> 35°C </div> </div> </section> <section data-section="search" class="mt-5"> <div class="search"> <form data-form="searchEngine"> <div class="input-wrapper mx-auto">  <input type="text" name="query" placeholder="Zoek met Google" autocomplete="off"> <button class="btn" type="submit"><i class="bx bx-search"></i></button> </div> </form> </div> <div class="search-results animate__animated animate__faster"> <h3 class="mb-4 text-center">Zoekresultaten</h3> <div class="search-results__wrapper flex-grid flex-grid--1i flex-grid--md-2i"> <div class="spinner-border d-block mx-auto mb-4" role="status"> <span class="sr-only">Loading...</span> </div> <div class="flex-grid__wrapper"> </div> </div> <a class="btn mt-4 mx-auto d-block" data-label="moreResults" href="">meer weergeven</a>  </div> </section> </div> <script src="/personal-startpage.596f774b.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+    
+    <!-- meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="shortcut icon" type='image/x-icon' href="https://lennertderyck.be/assets/images/LOGO_LDR_ZWART.ico"/> -->
+    <!-- <link rel="icon" type="image/png" href="https://lennertderyck.be/assets/images/LOGO_LDR_ZWART.png" /> -->
+    <!-- <meta name="theme-color" content="#662B32">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#662B32">
+    -->
+
+    <!-- seo -->
+    <meta name="description" content="Some information about this project for SEO purposes">
+    <meta name="keywords" content="add, some, tags, for, SEO, purposes">
+    
+    <!-- open graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="git.lennertderyck.be">
+    <meta property="og:title" content="a new project">
+    <!-- <meta property="og:image" content=""/> -->
+    
+    <link rel="stylesheet" href="/bootstrap.eb65e2bd.css">
+    <link rel="stylesheet" href="/index.min.d6c99653.css">
+    <link rel="stylesheet" href="/animate.min.5adc7952.css">
+    <link rel="stylesheet" href="/main.e31cb048.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hlx1nrx.css">
+    <link href="https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="d-flex align-items-center justify-content-center" data-sesam-target="searchCollapse">
+    <div id="app">
+        <section data-section="clock" class="mt-n5">
+            <div class="clock">
+                <span class="clock__hh">23</span><span class="clock__divider">:</span><span class="clock__mm">40</span><span class="clock__ss"></span>
+            </div>
+        </section>
+        <section data-section="details">
+            <div class="details">
+                locatie ophalen ...
+            </div>
+        </section>
+        <section data-section="search" class="mt-5">
+            <div class="search">
+                <form data-form="searchEngine">
+                    <div class="input-wrapper mx-auto">
+                        <img class="mr-2" src="https://cdn.svgporn.com/logos/google-icon.svg" alt="" height="20px">
+                        <!-- https://www.googleapis.com/customsearch/v1?key=AIzaSyDfIB_kua_hd8VLeIzKGOoTWJQihAM9ouw&cx=009271218045259039608:9chrbhrnk50&q=Lennert%20De%20Ryck -->
+                        <input type="text" name="query" placeholder="Zoek met Google" autocomplete="off">
+                        <button class="btn" type="submit"><i class="bx bx-search"></i></button>
+                    </div>
+                </form>
+                <button class="btn btn--simple ml-auto mr-3" data-action="prefs">voorkeuren</button>
+            </div>
+        </section>
+    </div>
+    <div data-label="searchResults" class="search-results animate__animated animate__faster">
+        <h3 class="mb-4 text-center">Zoekresultaten</h3>
+        <div class="search-results__wrapper flex-grid flex-grid--1i flex-grid--md-2i">
+            <div class="spinner-border d-block mx-auto mb-4" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="flex-grid__wrapper">
+            </div>
+        </div>
+        <a class="btn mt-4 mx-auto d-block" data-label="moreResults" href="">meer weergeven</a>
+        <!-- screen appears from bottom -->
+    </div>
+    
+    <script src="/personal-startpage.e31bb0bc.js"></script>
+</body>
+</html>

@@ -12,6 +12,10 @@ body {
     height: 100vh;
     line-height: initial;
     font-family: sofia-pro, sans-serif;
+    
+    &.sesam-show #app {
+        filter: blur(10px);
+    }
 }
 
 img {

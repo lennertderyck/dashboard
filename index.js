@@ -1,6 +1,6 @@
 import {clock, weather, search} from './static/modules/sections';
 import {eventCallback, getFormData, node} from 'cutleryjs';
-import {sesamCollapse} from 'sesam-collapse'
+import {sesamCollapse, sesam} from 'sesam-collapse';
 
 const app = {
     init() {
@@ -17,6 +17,18 @@ const app = {
     },
     
     listeners() {
+        document.addEventListener('click', (event) => {
+            eventCallback('[data-label="sesamBackdrop"]', () => {
+                sesam({
+                    target: 'searchCollapse',
+                    action: 'hide',
+                    modal: {
+                        backdrop: false
+                    }
+                }, search.reset)
+            }, false)
+        })
+        
         document.addEventListener('submit', (event) => {
             event.preventDefault();
             

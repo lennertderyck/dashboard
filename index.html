@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Parcel Boilerplate</title>
+    <title>Dashboard</title>
     
     <!-- meta -->
     <meta charset="UTF-8">
@@ -43,36 +43,34 @@
         </section>
         <section data-section="details">
             <div class="details">
-                <div class="details__day">Vrijdag, 7 Aug.</div>
-                <div class="details__devider"> | </div>
-                <div class="details__weather weather d-flex align-items-center align-content-center">
-                    <i class='bx bxs-sun'></i> 35°C
-                </div>
+                locatie ophalen ...
             </div>
         </section>
         <section data-section="search" class="mt-5">
             <div class="search">
                 <form data-form="searchEngine">
                     <div class="input-wrapper mx-auto">
+                        <img class="mr-2" src="https://cdn.svgporn.com/logos/google-icon.svg" alt="" height="20px">
                         <!-- https://www.googleapis.com/customsearch/v1?key=AIzaSyDfIB_kua_hd8VLeIzKGOoTWJQihAM9ouw&cx=009271218045259039608:9chrbhrnk50&q=Lennert%20De%20Ryck -->
                         <input type="text" name="query" placeholder="Zoek met Google" autocomplete="off">
                         <button class="btn" type="submit"><i class='bx bx-search'></i></button>
                     </div>
                 </form>
-            </div>
-            <div class="search-results animate__animated animate__faster">
-                <h3 class="mb-4 text-center">Zoekresultaten</h3>
-                <div class="search-results__wrapper flex-grid flex-grid--1i flex-grid--md-2i">
-                    <div class="spinner-border d-block mx-auto mb-4" role="status">
-                        <span class="sr-only">Loading...</span>
-                    </div>
-                    <div class="flex-grid__wrapper">
-                    </div>
-                </div>
-                <a class="btn mt-4 mx-auto d-block" data-label="moreResults" href="">meer weergeven</a>
-                <!-- screen appears from bottom -->
+                <button class="btn btn--simple ml-auto mr-3" data-action="prefs">voorkeuren</button>
             </div>
         </section>
+    </div>
+    <div data-label="searchResults" class="search-results animate__animated animate__faster">
+        <h3 class="mb-4 text-center">Zoekresultaten</h3>
+        <div class="search-results__wrapper flex-grid flex-grid--1i flex-grid--md-2i">
+            <div class="spinner-border d-block mx-auto mb-4" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="flex-grid__wrapper">
+            </div>
+        </div>
+        <a class="btn mt-4 mx-auto d-block" data-label="moreResults" href="">meer weergeven</a>
+        <!-- screen appears from bottom -->
     </div>
     
     <script src="index.js"></script>
