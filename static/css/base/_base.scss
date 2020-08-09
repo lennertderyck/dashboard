@@ -1,0 +1,25 @@
+* {
+    transition: all .3s ease;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #3e4041;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    line-height: initial;
+    font-family: sofia-pro, sans-serif;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+#app {
+    color: white;
+}
