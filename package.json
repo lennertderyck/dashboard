@@ -2,7 +2,7 @@
   "name": "parcel-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "core.js",
   "scripts": {
     "dev": "parcel watch index.html --target node --bundle-node-modules & browser-sync start --watch --server 'dist' --files 'dist' --no-notify",
     "build": "parcel build index.html --target node --bundle-node-modules"
