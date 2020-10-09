@@ -8,11 +8,9 @@ npm i
 
 ### 2. Run script
 
-### Development
+#### Development
 
-Use de NPM script detection in VS Code
-
-`build:development`
+Use de NPM script detection in VS Code: `build:development`
 
 Using the commandline
 
@@ -20,11 +18,9 @@ Using the commandline
 node build development
 ```
 
-### Production
+#### Production
 
-Use de NPM script detection in VS Code
-
-`build:production`
+Use de NPM script detection in VS Code: `build:production`
 
 Using the commandline
 
