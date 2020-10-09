@@ -4,8 +4,8 @@
   "description": "",
   "main": "core.js",
   "scripts": {
-    "dev": "parcel watch index.html --target node --bundle-node-modules & browser-sync start --watch --server 'dist' --files 'dist' --no-notify",
-    "build": "parcel build index.html --target node --bundle-node-modules"
+    "build:development": "node build development",
+    "build:production": "node build production"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +13,7 @@
   "dependencies": {
     "bootstrap": "^5.0.0-alpha1",
     "browser-sync": "^2.26.12",
-    "cutleryjs": "^1.9.0",
+    "cutleryjs": "^3.5.5",
     "popper": "^1.0.1",
     "sesam-collapse": "^5.3.2"
   },
