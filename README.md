@@ -10,7 +10,7 @@ npm i
 
 #### Development
 
-Use de NPM script detection in VS Code: `build:development`
+Using de NPM script detection in VS Code: `build:development` or
 
 Using the commandline
 
@@ -20,7 +20,7 @@ node build development
 
 #### Production
 
-Use de NPM script detection in VS Code: `build:production`
+Using de NPM script detection in VS Code: `build:production` or
 
 Using the commandline
 
